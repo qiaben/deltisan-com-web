@@ -36,10 +36,6 @@ function HeroVisual(): ReactNode {
             <span className={styles.specVal}>250 units</span>
           </div>
           <div className={styles.specRow}>
-            <span className={styles.specKey}>Lead time</span>
-            <span className={styles.specVal}>3 weeks</span>
-          </div>
-          <div className={styles.specRow}>
             <span className={styles.specKey}>QC</span>
             <span className={styles.specVal}>100% inspected</span>
           </div>
@@ -79,76 +75,148 @@ function Hero(): ReactNode {
   );
 }
 
+type Tile = {
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+  link: string;
+  linkLabel: string;
+  image: string;
+  full?: boolean;
+};
+
+function ProductTile({ tile }: { tile: Tile }): ReactNode {
+  const className = [styles.tile, styles.tileLight, tile.full ? styles.tileFull : '']
+    .filter(Boolean)
+    .join(' ');
+  return (
+    <article className={className}>
+      <div
+        className={styles.tileImage}
+        style={{ backgroundImage: `url(${tile.image})` }}
+      />
+      <div className={styles.tileScrim} />
+      <span className={styles.tileEyebrow}>{tile.eyebrow}</span>
+      <h2 className={styles.tileTitle}>{tile.title}</h2>
+      <p className={styles.tileSubtitle}>{tile.subtitle}</p>
+      <div className={styles.tileSpacer} />
+      <Link className={styles.tileLink} to={tile.link}>
+        {tile.linkLabel} ›
+      </Link>
+    </article>
+  );
+}
+
 function ProductTiles(): ReactNode {
+  const tiles: Tile[] = [
+    {
+      eyebrow: 'Design',
+      title: 'From rough sketch to production-ready CAD.',
+      subtitle:
+        'Mechanical design, DFM review, and tolerance analysis — by engineers who will be on the shop floor when it is built.',
+      link: '/capabilities',
+      linkLabel: 'Learn more',
+      image: '/img/stock/blueprint-1.jpg',
+    },
+    {
+      eyebrow: 'Manufacturing',
+      title: 'Machined, fabricated, finished.',
+      subtitle:
+        'Sheet metal, CNC machining, welding, and surface finishing — small to mid-volume runs with consistent QC.',
+      link: '/capabilities',
+      linkLabel: 'Learn more',
+      image: '/img/stock/cnc-1.jpg',
+    },
+    {
+      eyebrow: 'End to end',
+      title: 'One partner, from the first concept to the last carton.',
+      subtitle:
+        'Skip the handoffs. Deltisan handles design, prototyping, production, finishing, and dispatch in-house.',
+      link: '/process',
+      linkLabel: 'See the process',
+      image: '/img/stock/workshop-1.jpg',
+      full: true,
+    },
+    {
+      eyebrow: 'Products',
+      title: 'Custom assemblies, repeatably built.',
+      subtitle:
+        'Brackets, frames, enclosures, and bespoke assemblies for industrial and OEM customers.',
+      link: '/products',
+      linkLabel: 'Learn more',
+      image: '/img/stock/sheet-metal-1.jpg',
+    },
+    {
+      eyebrow: 'Quality',
+      title: 'Built to spec. Inspected to spec.',
+      subtitle:
+        'Documented tolerances, calibrated instruments, and 100% inspection on critical dimensions.',
+      link: '/process',
+      linkLabel: 'Learn more',
+      image: '/img/stock/blueprint-2.jpg',
+    },
+  ];
+
   return (
     <section className={styles.tileSection}>
       <div className={styles.tileGrid}>
-        <article className={styles.tile}>
-          <span className={styles.tileEyebrow}>Design</span>
-          <h2 className={styles.tileTitle}>From rough sketch to production-ready CAD.</h2>
-          <p className={styles.tileSubtitle}>
-            Mechanical design, DFM review, and tolerance analysis — done by
-            engineers who&apos;ll be on the shop floor when it&apos;s built.
-          </p>
-          <Link className={styles.tileLink} to="/capabilities">
-            Learn more ›
-          </Link>
-          <div className={styles.tileGlyph} aria-hidden="true">✎</div>
-        </article>
+        {tiles.map((t) => (
+          <ProductTile key={t.title} tile={t} />
+        ))}
+      </div>
+    </section>
+  );
+}
 
-        <article className={styles.tile}>
-          <span className={styles.tileEyebrow}>Manufacturing</span>
-          <h2 className={styles.tileTitle}>Machined, fabricated, finished.</h2>
-          <p className={styles.tileSubtitle}>
-            Sheet metal, machining, welding, and surface finishing — small to
-            mid-volume runs with consistent QC.
-          </p>
-          <Link className={styles.tileLink} to="/capabilities">
-            Learn more ›
-          </Link>
-          <div className={styles.tileGlyph} aria-hidden="true">⚙</div>
-        </article>
+function HeroStrip(): ReactNode {
+  return (
+    <section
+      className={styles.heroStrip}
+      style={{ backgroundImage: 'url(/img/stock/welding-1.jpg)' }}
+      aria-label="Deltisan workshop">
+      <div className={styles.heroStripCaption}>
+        <h3 className={styles.heroStripTitle}>
+          Built in Coimbatore. Trusted by OEMs across India.
+        </h3>
+        <span className={styles.heroStripMeta}>The workshop</span>
+      </div>
+    </section>
+  );
+}
 
-        <article className={`${styles.tile} ${styles.tileFull}`}>
-          <span className={styles.tileEyebrow}>End to end</span>
-          <h2 className={styles.tileTitle}>
-            One partner, from the first concept to the last carton.
-          </h2>
-          <p className={styles.tileSubtitle}>
-            Skip the handoffs. Deltisan handles design, prototyping,
-            production, finishing, and dispatch in-house.
-          </p>
-          <Link className={styles.tileLink} to="/process">
-            See the process ›
-          </Link>
-          <div className={styles.tileGlyph} aria-hidden="true">▦</div>
-        </article>
-
-        <article className={styles.tile}>
-          <span className={styles.tileEyebrow}>Products</span>
-          <h2 className={styles.tileTitle}>Custom assemblies, repeatably built.</h2>
-          <p className={styles.tileSubtitle}>
-            Brackets, frames, enclosures, and bespoke assemblies for industrial
-            and OEM customers.
-          </p>
-          <Link className={styles.tileLink} to="/products">
-            Learn more ›
-          </Link>
-          <div className={styles.tileGlyph} aria-hidden="true">⬢</div>
-        </article>
-
-        <article className={styles.tile}>
-          <span className={styles.tileEyebrow}>Quality</span>
-          <h2 className={styles.tileTitle}>Built to spec. Inspected to spec.</h2>
-          <p className={styles.tileSubtitle}>
-            Documented tolerances, calibrated instruments, and 100% inspection
-            on critical dimensions.
-          </p>
-          <Link className={styles.tileLink} to="/process">
-            Learn more ›
-          </Link>
-          <div className={styles.tileGlyph} aria-hidden="true">◯</div>
-        </article>
+function Gallery(): ReactNode {
+  const items = [
+    { src: '/img/stock/cnc-2.jpg', caption: 'CNC machining', cls: 'tall' },
+    { src: '/img/stock/welding-2.jpg', caption: 'TIG welding' },
+    { src: '/img/stock/sheet-metal-2.jpg', caption: 'Sheet metal' },
+    { src: '/img/stock/cnc-3.jpg', caption: 'Precision turning' },
+    { src: '/img/stock/welding-3.jpg', caption: 'Fabrication', cls: 'wide' },
+    { src: '/img/stock/sheet-metal-3.jpg', caption: 'Press & punch' },
+  ];
+  return (
+    <section className={styles.gallerySection}>
+      <div className={styles.galleryHead}>
+        <p className={styles.sectionEyebrow}>In the workshop</p>
+        <h2 className={styles.sectionTitle}>
+          Real machines.{' '}
+          <span className={styles.gradientText}>Real engineers.</span>
+        </h2>
+        <p className={styles.sectionSubtitle}>
+          Coimbatore has been making things for a hundred years. Deltisan is
+          the next chapter.
+        </p>
+      </div>
+      <div className={styles.galleryGrid}>
+        {items.map((it) => (
+          <div
+            key={it.src}
+            className={`${styles.galleryItem} ${it.cls ? styles[it.cls] : ''}`}
+            style={{ backgroundImage: `url(${it.src})` }}
+            role="img"
+            aria-label={it.caption}>
+            <span className={styles.galleryCaption}>{it.caption}</span>
+          </div>
+        ))}
       </div>
     </section>
   );
@@ -156,15 +224,51 @@ function ProductTiles(): ReactNode {
 
 function Capabilities(): ReactNode {
   const items = [
-    { icon: '✎', title: 'Mechanical design', desc: 'CAD, DFM review, tolerance stacks, drawings ready for the floor.' },
-    { icon: '🛠', title: 'Prototyping', desc: 'First-articles built fast so you can hold the part before committing.' },
-    { icon: '⚙', title: 'CNC machining', desc: 'Turning and milling for precision components and fixtures.' },
-    { icon: '◧', title: 'Sheet metal', desc: 'Cutting, bending, punching, and welding for frames and enclosures.' },
-    { icon: '🔥', title: 'Welding & fabrication', desc: 'MIG, TIG, and structural fabrication with documented procedures.' },
-    { icon: '🎨', title: 'Surface finishing', desc: 'Powder coating, painting, plating, and corrosion protection.' },
-    { icon: '📐', title: 'Quality control', desc: 'Calibrated instruments, inspection reports, and traceable batches.' },
-    { icon: '📦', title: 'Assembly & packing', desc: 'Sub-assembly, fitment checks, and ready-to-ship packaging.' },
-    { icon: '🚚', title: 'Logistics', desc: 'Pan-India dispatch, with export support on request.' },
+    {
+      image: '/img/stock/blueprint-1.jpg',
+      title: 'Mechanical design',
+      desc: 'CAD, DFM review, tolerance stacks, drawings ready for the floor.',
+    },
+    {
+      image: '/img/stock/blueprint-2.jpg',
+      title: 'Prototyping',
+      desc: 'First-articles built fast so you can hold the part before committing.',
+    },
+    {
+      image: '/img/stock/cnc-1.jpg',
+      title: 'CNC machining',
+      desc: 'Turning and milling for precision components and fixtures.',
+    },
+    {
+      image: '/img/stock/sheet-metal-2.jpg',
+      title: 'Sheet metal',
+      desc: 'Cutting, bending, punching, and welding for frames and enclosures.',
+    },
+    {
+      image: '/img/stock/welding-1.jpg',
+      title: 'Welding & fabrication',
+      desc: 'MIG, TIG, and structural fabrication with documented procedures.',
+    },
+    {
+      image: '/img/stock/welding-3.jpg',
+      title: 'Surface finishing',
+      desc: 'Powder coating, painting, plating, and corrosion protection.',
+    },
+    {
+      image: '/img/stock/cnc-2.jpg',
+      title: 'Quality control',
+      desc: 'Calibrated instruments, inspection reports, and traceable batches.',
+    },
+    {
+      image: '/img/stock/sheet-metal-1.jpg',
+      title: 'Assembly & packing',
+      desc: 'Sub-assembly, fitment checks, and ready-to-ship packaging.',
+    },
+    {
+      image: '/img/stock/workshop-1.jpg',
+      title: 'Logistics',
+      desc: 'Pan-India dispatch, with export support on request.',
+    },
   ];
 
   return (
@@ -181,9 +285,14 @@ function Capabilities(): ReactNode {
       <div className={styles.moduleGrid}>
         {items.map((m) => (
           <div key={m.title} className={styles.module}>
-            <div className={styles.moduleIcon}>{m.icon}</div>
-            <h3 className={styles.moduleTitle}>{m.title}</h3>
-            <p className={styles.moduleDesc}>{m.desc}</p>
+            <div
+              className={styles.moduleImage}
+              style={{ backgroundImage: `url(${m.image})` }}
+            />
+            <div className={styles.moduleBody}>
+              <h3 className={styles.moduleTitle}>{m.title}</h3>
+              <p className={styles.moduleDesc}>{m.desc}</p>
+            </div>
           </div>
         ))}
       </div>
@@ -221,8 +330,10 @@ export default function Home(): ReactNode {
       description="Deltisan is an engineering company in Coimbatore that designs and produces precision-built products. End-to-end: design, prototyping, manufacturing, finishing, and dispatch.">
       <div className={styles.page}>
         <Hero />
+        <HeroStrip />
         <ProductTiles />
         <Capabilities />
+        <Gallery />
         <Closing />
       </div>
     </Layout>

@@ -9,6 +9,11 @@ export default function Company(): ReactNode {
       title="Company — Deltisan Engineering"
       description="Deltisan Engineering — design and manufacturing in Coimbatore, Tamil Nadu, India.">
       <section className={styles.stub}>
+        <div
+          className={styles.heroBanner}
+          style={{ backgroundImage: 'url(/img/stock/welding-1.jpg)' }}
+          aria-hidden="true"
+        />
         <p className={styles.eyebrow}>Company</p>
         <h1 className={styles.title}>Engineering, the way it should be — careful, considered, and built to last.</h1>
         <p className={styles.subtitle}>

@@ -5,6 +5,45 @@
   min-height: 60vh;
 }
 
+.heroBanner {
+  margin: 0 auto 56px;
+  max-width: 1120px;
+  height: 320px;
+  border-radius: 24px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroBanner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(11, 15, 23, 0.6) 100%);
+}
+
+.imageStrip {
+  max-width: 1120px;
+  margin: 56px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.imageStrip > div {
+  height: 180px;
+  border-radius: 14px;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 720px) {
+  .imageStrip {
+    grid-template-columns: 1fr;
+  }
+}
+
 .eyebrow {
   font-size: 0.82rem;
   font-weight: 600;

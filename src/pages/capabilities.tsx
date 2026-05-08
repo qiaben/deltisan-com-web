@@ -9,6 +9,11 @@ export default function Capabilities(): ReactNode {
       title="Capabilities — Deltisan Engineering"
       description="Deltisan capabilities: mechanical design, CNC machining, sheet metal, welding, fabrication, finishing, and quality control.">
       <section className={styles.stub}>
+        <div
+          className={styles.heroBanner}
+          style={{ backgroundImage: 'url(/img/stock/cnc-1.jpg)' }}
+          aria-hidden="true"
+        />
         <p className={styles.eyebrow}>Capabilities</p>
         <h1 className={styles.title}>Design and manufacturing under one roof.</h1>
         <p className={styles.subtitle}>
@@ -17,6 +22,11 @@ export default function Capabilities(): ReactNode {
           are available on request.
         </p>
         <Link className={styles.cta} to="/contact">Discuss your part</Link>
+        <div className={styles.imageStrip} aria-hidden="true">
+          <div style={{ backgroundImage: 'url(/img/stock/blueprint-1.jpg)' }} />
+          <div style={{ backgroundImage: 'url(/img/stock/welding-1.jpg)' }} />
+          <div style={{ backgroundImage: 'url(/img/stock/sheet-metal-2.jpg)' }} />
+        </div>
       </section>
     </Layout>
   );

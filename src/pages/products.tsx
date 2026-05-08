@@ -9,6 +9,11 @@ export default function Products(): ReactNode {
       title="Products — Deltisan Engineering"
       description="Deltisan products and custom assemblies: brackets, frames, enclosures, and bespoke components for industrial and OEM customers.">
       <section className={styles.stub}>
+        <div
+          className={styles.heroBanner}
+          style={{ backgroundImage: 'url(/img/stock/sheet-metal-1.jpg)' }}
+          aria-hidden="true"
+        />
         <p className={styles.eyebrow}>Products</p>
         <h1 className={styles.title}>Custom assemblies, repeatably built.</h1>
         <p className={styles.subtitle}>
@@ -17,6 +22,11 @@ export default function Products(): ReactNode {
           gallery coming soon.
         </p>
         <Link className={styles.cta} to="/contact">Request a quote</Link>
+        <div className={styles.imageStrip} aria-hidden="true">
+          <div style={{ backgroundImage: 'url(/img/stock/cnc-2.jpg)' }} />
+          <div style={{ backgroundImage: 'url(/img/stock/sheet-metal-3.jpg)' }} />
+          <div style={{ backgroundImage: 'url(/img/stock/welding-3.jpg)' }} />
+        </div>
       </section>
     </Layout>
   );

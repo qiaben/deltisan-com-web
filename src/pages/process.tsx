@@ -9,6 +9,11 @@ export default function Process(): ReactNode {
       title="Process — Deltisan Engineering"
       description="The Deltisan process: from concept through design, prototyping, manufacturing, finishing, QC, and dispatch.">
       <section className={styles.stub}>
+        <div
+          className={styles.heroBanner}
+          style={{ backgroundImage: 'url(/img/stock/workshop-1.jpg)' }}
+          aria-hidden="true"
+        />
         <p className={styles.eyebrow}>Process</p>
         <h1 className={styles.title}>From sketch to shipped, in one workshop.</h1>
         <p className={styles.subtitle}>
@@ -17,6 +22,11 @@ export default function Process(): ReactNode {
           checkpoints at every stage.
         </p>
         <Link className={styles.cta} to="/contact">Start a project</Link>
+        <div className={styles.imageStrip} aria-hidden="true">
+          <div style={{ backgroundImage: 'url(/img/stock/blueprint-2.jpg)' }} />
+          <div style={{ backgroundImage: 'url(/img/stock/cnc-3.jpg)' }} />
+          <div style={{ backgroundImage: 'url(/img/stock/welding-2.jpg)' }} />
+        </div>
       </section>
     </Layout>
   );
