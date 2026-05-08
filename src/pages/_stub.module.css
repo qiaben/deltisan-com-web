@@ -44,6 +44,247 @@
   }
 }
 
+/* ---------- Product / category grid ---------- */
+.productSection {
+  padding: 100px 20px;
+  background: var(--d-bg);
+  text-align: center;
+}
+
+.productGrid {
+  max-width: 1120px;
+  margin: 56px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .productGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.productCard {
+  border: 1px solid var(--d-border);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--d-bg);
+}
+
+.productImage {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.productBody {
+  padding: 20px 22px 24px;
+}
+
+.productTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 6px;
+  color: var(--d-text);
+}
+
+.productDesc {
+  font-size: 0.92rem;
+  color: var(--d-text-soft);
+  line-height: 1.5;
+  margin: 0 0 10px;
+}
+
+.productMeta {
+  font-size: 0.78rem;
+  color: var(--d-accent);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* ---------- Industries strip ---------- */
+.industries {
+  padding: 80px 20px;
+  background: var(--d-bg-soft);
+  text-align: center;
+}
+
+.industriesGrid {
+  max-width: 1120px;
+  margin: 36px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  text-align: left;
+}
+
+@media (max-width: 720px) {
+  .industriesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.industry {
+  padding: 16px 18px;
+  background: var(--d-bg);
+  border: 1px solid var(--d-border);
+  border-radius: 12px;
+}
+
+.industryTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 4px;
+  color: var(--d-text);
+}
+
+.industryDesc {
+  font-size: 0.82rem;
+  color: var(--d-text-soft);
+  margin: 0;
+}
+
+/* ---------- Process timeline ---------- */
+.processSection {
+  padding: 100px 20px;
+  background: var(--d-bg);
+}
+
+.processTimeline {
+  max-width: 880px;
+  margin: 56px auto 0;
+  position: relative;
+}
+
+.processTimeline::before {
+  content: '';
+  position: absolute;
+  left: 31px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(
+    180deg,
+    var(--d-accent) 0%,
+    var(--d-accent-warm) 100%
+  );
+  opacity: 0.25;
+}
+
+@media (max-width: 720px) {
+  .processTimeline::before {
+    left: 23px;
+  }
+}
+
+.processStep {
+  display: grid;
+  grid-template-columns: 64px 1fr 200px;
+  gap: 24px;
+  padding: 20px 0;
+  align-items: center;
+}
+
+@media (max-width: 720px) {
+  .processStep {
+    grid-template-columns: 48px 1fr;
+  }
+  .processStep > .processImage {
+    display: none;
+  }
+}
+
+.processNumber {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--d-bg);
+  border: 2px solid var(--d-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--d-accent);
+  letter-spacing: -0.01em;
+  z-index: 1;
+}
+
+@media (max-width: 720px) {
+  .processNumber {
+    width: 48px;
+    height: 48px;
+    font-size: 0.95rem;
+  }
+}
+
+.processBody {
+  padding-right: 16px;
+}
+
+.processTitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin: 0 0 4px;
+  color: var(--d-text);
+}
+
+.processDesc {
+  font-size: 0.92rem;
+  color: var(--d-text-soft);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.processImage {
+  width: 200px;
+  height: 120px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ---------- Quality callout ---------- */
+.qualityCallout {
+  max-width: 880px;
+  margin: 60px auto 0;
+  padding: 28px 32px;
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    rgba(29, 78, 216, 0.08) 0%,
+    rgba(245, 158, 11, 0.08) 100%
+  );
+  border: 1px solid var(--d-border);
+}
+
+.qualityTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 6px;
+  color: var(--d-text);
+}
+
+.qualityDesc {
+  font-size: 0.92rem;
+  color: var(--d-text-soft);
+  line-height: 1.5;
+  margin: 0;
+}
+
 .eyebrow {
   font-size: 0.82rem;
   font-weight: 600;
