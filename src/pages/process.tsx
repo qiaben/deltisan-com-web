@@ -104,7 +104,7 @@ export default function Process(): ReactNode {
           Send a drawing or a description and we&apos;ll move you straight to
           step one.
         </p>
-        <Link className={styles.cta} to="/contact">Start a project</Link>
+        <Link className={styles.cta} to="/schedule">Book a call</Link>
       </section>
     </Layout>
   );

@@ -102,8 +102,8 @@ export default function Privacy(): ReactNode {
             You may request access to, correction of, or deletion of the
             personal information we hold about you, subject to applicable
             law. To make a request, write to{' '}
-            <a href="mailto:deltisanengineering@gmail.com">
-              deltisanengineering@gmail.com
+            <a href="mailto:info@deltisan.com">
+              info@deltisan.com
             </a>
             .
           </p>
@@ -121,8 +121,8 @@ export default function Privacy(): ReactNode {
             <li>1/39, Veerappanur, Coimbatore, Tamil Nadu 641105, India</li>
             <li>
               Email:{' '}
-              <a href="mailto:deltisanengineering@gmail.com">
-                deltisanengineering@gmail.com
+              <a href="mailto:info@deltisan.com">
+                info@deltisan.com
               </a>
             </li>
             <li>

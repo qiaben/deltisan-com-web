@@ -62,8 +62,8 @@ function Hero(): ReactNode {
         manufacture, and finish — under one roof.
       </p>
       <div className={styles.heroCtas}>
-        <Link className={styles.primaryCta} to="/contact">
-          Get a quote
+        <Link className={styles.primaryCta} to="/schedule">
+          Book a call
         </Link>
         <Link className={styles.linkCta} to="/capabilities">
           See capabilities ›
@@ -311,11 +311,11 @@ function Closing(): ReactNode {
         back with a feasibility note and an honest quote.
       </p>
       <div className={styles.closingCtas}>
-        <Link className={styles.primaryCta} to="/contact">
-          Get a quote
+        <Link className={styles.primaryCta} to="/schedule">
+          Book a call
         </Link>
-        <Link className={styles.linkCta} to="/company">
-          About Deltisan ›
+        <Link className={styles.linkCta} to="/contact">
+          Email us a drawing ›
         </Link>
       </div>
     </section>

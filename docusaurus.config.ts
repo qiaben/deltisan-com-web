@@ -32,7 +32,7 @@ const config: Config = {
         '@type': 'Organization',
         name: 'Deltisan Engineering',
         url: 'https://deltisan.com',
-        email: 'deltisanengineering@gmail.com',
+        email: 'info@deltisan.com',
         telephone: '+91-93633-32913',
         address: {
           '@type': 'PostalAddress',
@@ -102,9 +102,10 @@ const config: Config = {
         { to: '/process', label: 'Process', position: 'left' },
         { to: '/blog', label: 'Journal', position: 'left' },
         { to: '/company', label: 'Company', position: 'left' },
+        { to: '/contact', label: 'Contact', position: 'right' },
         {
-          to: '/contact',
-          label: 'Get a quote',
+          to: '/schedule',
+          label: 'Book a call',
           position: 'right',
           className: 'navbar-cta',
         },
@@ -126,6 +127,7 @@ const config: Config = {
           title: 'Company',
           items: [
             { label: 'About', to: '/company' },
+            { label: 'Book a call', to: '/schedule' },
             { label: 'Contact', to: '/contact' },
           ],
         },

@@ -172,8 +172,8 @@ export default function Company(): ReactNode {
               <br />
               Coimbatore, Tamil Nadu 641105, India
             </p>
-            <Link className={styles.cta} to="/contact">
-              Visit / Contact
+            <Link className={styles.cta} to="/schedule">
+              Book a call
             </Link>
           </div>
         </div>
@@ -185,7 +185,7 @@ export default function Company(): ReactNode {
           Send a drawing or a description. We&apos;ll come back with a
           feasibility note and a quote.
         </p>
-        <Link className={styles.cta} to="/contact">Get in touch</Link>
+        <Link className={styles.cta} to="/schedule">Book a call</Link>
       </section>
     </Layout>
   );

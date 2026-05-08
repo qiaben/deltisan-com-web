@@ -89,7 +89,7 @@ export default function Products(): ReactNode {
           alongside our engineers. The categories below are a sample of what
           we ship every week.
         </p>
-        <Link className={styles.cta} to="/contact">Request a quote</Link>
+        <Link className={styles.cta} to="/schedule">Book a call</Link>
       </section>
 
       <section className={styles.productSection} style={{ paddingTop: 40 }}>
@@ -132,7 +132,7 @@ export default function Products(): ReactNode {
           Send a CAD file, a sketch, or a sample. We&apos;ll come back with a
           feasibility note and an honest quote.
         </p>
-        <Link className={styles.cta} to="/contact">Get in touch</Link>
+        <Link className={styles.cta} to="/schedule">Book a call</Link>
       </section>
     </Layout>
   );

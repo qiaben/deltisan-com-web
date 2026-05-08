@@ -135,7 +135,7 @@ export default function Capabilities(): ReactNode {
           surface finishing, and quality control — six capabilities owned by
           one team.
         </p>
-        <Link className={styles.cta} to="/contact">Discuss your part</Link>
+        <Link className={styles.cta} to="/schedule">Book a call</Link>
       </section>
 
       <section className={styles.processSection} style={{ paddingTop: 40, paddingBottom: 80 }}>
@@ -249,7 +249,7 @@ export default function Capabilities(): ReactNode {
           Send a drawing or a sketch. We will tell you what is feasible, what
           we&apos;d change, and what it costs.
         </p>
-        <Link className={styles.cta} to="/contact">Get a quote</Link>
+        <Link className={styles.cta} to="/schedule">Book a call</Link>
       </section>
     </Layout>
   );

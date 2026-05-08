@@ -147,8 +147,8 @@ export default function Terms(): ReactNode {
             <li>1/39, Veerappanur, Coimbatore, Tamil Nadu 641105, India</li>
             <li>
               Email:{' '}
-              <a href="mailto:deltisanengineering@gmail.com">
-                deltisanengineering@gmail.com
+              <a href="mailto:info@deltisan.com">
+                info@deltisan.com
               </a>
             </li>
             <li>
