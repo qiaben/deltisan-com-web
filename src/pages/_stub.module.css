@@ -1,0 +1,144 @@
+.stub {
+  padding: 140px 20px 120px;
+  text-align: center;
+  background: var(--d-bg);
+  min-height: 60vh;
+}
+
+.eyebrow {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--d-accent);
+  margin-bottom: 14px;
+}
+
+.title {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 0 auto 18px;
+  max-width: 22ch;
+  color: var(--d-text);
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  color: var(--d-text-soft);
+  max-width: 52ch;
+  margin: 0 auto 28px;
+  line-height: 1.4;
+}
+
+.cta {
+  background: var(--d-accent);
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 980px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background: #173eaa;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contactGrid {
+  max-width: 760px;
+  margin: 12px auto 36px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contactCard {
+  padding: 18px 20px;
+  border: 1px solid var(--d-border);
+  border-radius: 16px;
+  background: var(--d-bg);
+}
+
+.contactLabel {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--d-text-soft);
+  margin-bottom: 6px;
+}
+
+.contactValue {
+  font-size: 0.95rem;
+  color: var(--d-text);
+  line-height: 1.4;
+  text-decoration: none;
+  display: block;
+}
+
+a.contactValue:hover {
+  color: var(--d-accent);
+  text-decoration: underline;
+}
+
+.legalContainer {
+  padding: 100px 20px 80px;
+  background: var(--d-bg);
+}
+
+.legal {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: left;
+  color: var(--d-text);
+}
+
+.legal h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  margin: 0 0 8px;
+}
+
+.legal h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin: 36px 0 8px;
+  color: var(--d-text);
+}
+
+.legal h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 24px 0 6px;
+  color: var(--d-text);
+}
+
+.legal p,
+.legal li {
+  font-size: 0.96rem;
+  line-height: 1.6;
+  color: var(--d-text);
+}
+
+.legal ul {
+  padding-left: 20px;
+}
+
+.legalMeta {
+  color: var(--d-text-soft);
+  margin: 0 0 24px;
+  font-size: 0.86rem;
+}
