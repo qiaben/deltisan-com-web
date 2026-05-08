@@ -39,7 +39,7 @@ const config: Config = {
           addressCountry: 'IN',
         },
         description:
-          'Deltisan is an engineering company that designs and produces precision-built products in Coimbatore, India.',
+          'Deltisan is an engineering company that designs and produces precision-built products.',
       }),
     },
   ],
@@ -113,7 +113,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Deltisan Engineering. Coimbatore, Tamil Nadu, India.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Deltisan Engineering.`,
     },
     prism: {
       theme: prismThemes.github,

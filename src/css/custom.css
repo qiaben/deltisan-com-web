@@ -30,7 +30,7 @@
   --ifm-link-decoration: none;
   --ifm-link-hover-decoration: underline;
 
-  --ifm-navbar-height: 56px;
+  --ifm-navbar-height: 84px;
   --ifm-navbar-padding-vertical: 0;
   --ifm-navbar-link-color: #1d1d1f;
   --ifm-navbar-link-hover-color: #1d1d1f;
@@ -96,8 +96,24 @@ body {
 
 .navbar__title {
   font-weight: 600;
-  font-size: 1rem;
-  letter-spacing: -0.01em;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  margin-left: 4px;
+}
+
+.navbar__brand {
+  align-items: center;
+}
+
+.navbar__logo {
+  height: 60px;
+  width: auto;
+  margin-right: 4px;
+}
+
+.navbar__logo img {
+  height: 60px;
+  width: auto;
 }
 
 .navbar__link {

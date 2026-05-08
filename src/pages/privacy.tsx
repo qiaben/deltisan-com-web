@@ -18,8 +18,8 @@ export default function Privacy(): ReactNode {
 
           <p>
             Deltisan Engineering (&ldquo;Deltisan,&rdquo; &ldquo;we,&rdquo;
-            &ldquo;us,&rdquo; or &ldquo;our&rdquo;), based in Coimbatore,
-            Tamil Nadu, India, respects the privacy of visitors to{' '}
+            &ldquo;us,&rdquo; or &ldquo;our&rdquo;) respects the privacy of
+            visitors to{' '}
             <a href="https://deltisan.com">deltisan.com</a> and of our
             customers. This Privacy Policy describes the personal
             information we collect and how we use it.

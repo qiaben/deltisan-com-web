@@ -6,7 +6,7 @@ export default function Contact(): ReactNode {
   return (
     <Layout
       title="Contact — Deltisan Engineering"
-      description="Contact Deltisan Engineering. Coimbatore, Tamil Nadu. Phone, email, and address.">
+      description="Contact Deltisan Engineering. Phone, email, and address.">
       <section className={styles.stub}>
         <p className={styles.eyebrow}>Get in touch</p>
         <h1 className={styles.title}>Talk to an engineer.</h1>

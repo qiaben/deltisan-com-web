@@ -41,7 +41,7 @@ function HeroVisual(): ReactNode {
           </div>
           <div className={styles.specRow}>
             <span className={styles.specKey}>Origin</span>
-            <span className={styles.specVal}>Coimbatore, IN</span>
+            <span className={styles.specVal}>India</span>
           </div>
         </aside>
       </div>
@@ -58,9 +58,8 @@ function Hero(): ReactNode {
         <span className={styles.gradientText}>things that last</span>.
       </h1>
       <p className={styles.heroSubtitle}>
-        Deltisan is an engineering company in Coimbatore. We take ideas from
-        sketch to shipped product — design, prototype, manufacture, and finish
-        — under one roof.
+        We take ideas from sketch to shipped product — design, prototype,
+        manufacture, and finish — under one roof.
       </p>
       <div className={styles.heroCtas}>
         <Link className={styles.primaryCta} to="/contact">
@@ -176,7 +175,7 @@ function HeroStrip(): ReactNode {
       aria-label="Deltisan workshop">
       <div className={styles.heroStripCaption}>
         <h3 className={styles.heroStripTitle}>
-          Built in Coimbatore. Trusted by OEMs across India.
+          Built for OEMs and industrial customers across India.
         </h3>
         <span className={styles.heroStripMeta}>The workshop</span>
       </div>
@@ -202,8 +201,8 @@ function Gallery(): ReactNode {
           <span className={styles.gradientText}>Real engineers.</span>
         </h2>
         <p className={styles.sectionSubtitle}>
-          Coimbatore has been making things for a hundred years. Deltisan is
-          the next chapter.
+          A look inside the shop floor where parts get cut, formed, welded,
+          and finished.
         </p>
       </div>
       <div className={styles.galleryGrid}>
@@ -326,8 +325,8 @@ function Closing(): ReactNode {
 export default function Home(): ReactNode {
   return (
     <Layout
-      title="Deltisan Engineering — Design & manufacturing in Coimbatore"
-      description="Deltisan is an engineering company in Coimbatore that designs and produces precision-built products. End-to-end: design, prototyping, manufacturing, finishing, and dispatch.">
+      title="Deltisan Engineering — Design and manufacturing"
+      description="Deltisan is an engineering company that designs and produces precision-built products. End-to-end: design, prototyping, manufacturing, finishing, and dispatch.">
       <div className={styles.page}>
         <Hero />
         <HeroStrip />
