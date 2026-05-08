@@ -25,23 +25,23 @@ const steps = [
     image: '/img/stock/cnc-3.jpg',
   },
   {
-    title: 'Material procurement',
-    desc: 'We source steel, aluminium, stainless, fasteners, and consumables from vetted suppliers with traceable mill certificates.',
+    title: 'Material specified and sourced',
+    desc: 'We specify the material on the drawing and source it through vetted suppliers with traceable mill certificates — so our partner shops start from a known, documented input.',
     image: '/img/stock/sheet-metal-3.jpg',
   },
   {
-    title: 'Manufacture',
-    desc: 'CNC machining, sheet-metal cutting and forming, welding, and structural fabrication — done in-house with documented procedures.',
+    title: 'Manufactured by the right partner',
+    desc: 'CNC machining, sheet-metal cutting and forming, welding, and structural fabrication — run at the partner workshop best suited to the part, under documented procedures we wrote.',
     image: '/img/stock/cnc-1.jpg',
   },
   {
-    title: 'Finish',
-    desc: 'Powder coating, painting, plating, or other surface treatments to your spec, with colour and finish controlled to standards.',
+    title: 'Finished',
+    desc: 'Powder coating, painting, plating, or other surface treatments through a finishing partner — to a spec we hold them to, not just hand off.',
     image: '/img/stock/welding-3.jpg',
   },
   {
-    title: 'Inspection',
-    desc: 'Calibrated instruments, documented tolerances, and 100% inspection on critical dimensions. Inspection reports on request.',
+    title: 'Inspection — by us',
+    desc: 'Inspected by Deltisan engineers in our own QC bay before anything ships. Calibrated instruments, documented tolerances, 100% inspection on critical dimensions, reports on request.',
     image: '/img/stock/cnc-2.jpg',
   },
   {
@@ -63,10 +63,11 @@ export default function Process(): ReactNode {
           aria-hidden="true"
         />
         <p className={styles.eyebrow}>Process</p>
-        <h1 className={styles.title}>From sketch to shipped, in one workshop.</h1>
+        <h1 className={styles.title}>From sketch to shipped, with one team accountable.</h1>
         <p className={styles.subtitle}>
-          A single team owns the part end to end, with documented checkpoints
-          at every stage. Here is how an order moves through Deltisan.
+          Deltisan engineers own the part from drawing to dispatch — even
+          while production runs through our partner network. Here is how an
+          order moves through us.
         </p>
       </section>
 
@@ -89,11 +90,13 @@ export default function Process(): ReactNode {
         </div>
 
         <div className={styles.qualityCallout}>
-          <h3 className={styles.qualityTitle}>Quality, in plain English</h3>
+          <h3 className={styles.qualityTitle}>Why this works</h3>
           <p className={styles.qualityDesc}>
-            We use calibrated instruments, follow documented procedures, and
-            keep traceable records for every batch. If something is wrong, we
-            tell you, and we make it right. That&apos;s the deal.
+            Most workshops are good at one or two things. Pretending to be
+            great at everything is how parts go wrong. Deltisan owns the
+            engineering and QC; we pick the partner whose machines and
+            people are right for the part. You get one accountable team and
+            a workshop matched to the job.
           </p>
         </div>
       </section>

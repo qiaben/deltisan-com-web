@@ -10,7 +10,7 @@ image: /img/stock/welding-3.jpg
 
 ![Finished and ready for dispatch](/img/stock/welding-3.jpg)
 
-When customers don't specify a finish, our default for steel parts is powder coat. It's not because we have a powder line and a hammer looking for a nail — it's because, for most use cases, powder simply lasts longer and looks better. Here's the short version.
+When customers don't specify a finish, our default for steel parts is powder coat. It's not because we're attached to one technology — it's because, for most use cases, powder simply lasts longer and looks better. Here's the short version.
 
 <!--truncate-->
 
@@ -28,15 +28,17 @@ A few things make powder coat the right default for industrial parts:
 - **Environmental.** No VOCs. Overspray can be reclaimed.
 - **Cost.** For batch quantities, powder is genuinely cheaper than a comparably durable wet system.
 
+We run powder through specialist finishing partners we work with regularly. Same equipment, same process discipline, same coatings — we just don't pretend a finishing line is something every job shop should run in-house.
+
 ## When wet paint is still the right call
 
 Powder coat is the default — not the only option. Wet paint wins when:
 
-- The part is **too large for our oven**. We have limits, and so does any shop. Site-painted structures stay site-painted.
+- The part is **too large for the finishing partner's oven**. Every powder line has size limits. Site-painted structures stay site-painted.
 - The part is **heat-sensitive** — anything with already-applied seals, certain plastics, or pre-finished hardware that can't go to 200 °C.
 - You need a **specific custom colour or texture** that's only available in a wet system. We can match almost anything in powder, but not absolutely everything.
 - You need **easy field touch-up** later. Powder is hard to repair on site; wet paint can be touched up with a brush.
 
 ## The boring truth
 
-For 90% of fabricated steel parts, powder is the better answer. It's tougher, looks more even, and — once you account for rework and longevity — costs less per year of service. We default to it because, after enough years on the shop floor, you stop arguing with what works.
+For 90% of fabricated steel parts, powder is the better answer. It's tougher, looks more even, and — once you account for rework and longevity — costs less per year of service. We default to it because, after seeing enough parts come back from the field, you stop arguing with what works.
