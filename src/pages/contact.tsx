@@ -18,12 +18,12 @@ export default function Contact(): ReactNode {
         <div className={styles.contactGrid}>
           <div className={styles.contactCard}>
             <div className={styles.contactLabel}>Contact person</div>
-            <div className={styles.contactValue}>Arun Prakash</div>
+            <div className={styles.contactValue}>Suhesma Sri</div>
           </div>
           <div className={styles.contactCard}>
             <div className={styles.contactLabel}>Phone</div>
-            <a className={styles.contactValue} href="tel:+919943599093">
-              +91 99435 99093
+            <a className={styles.contactValue} href="tel:+919363332913">
+              +91 93633 32913
             </a>
           </div>
           <div className={styles.contactCard}>

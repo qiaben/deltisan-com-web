@@ -126,8 +126,8 @@ export default function Privacy(): ReactNode {
               </a>
             </li>
             <li>
-              Phone: <a href="tel:+919943599093">+91 99435 99093</a>{' '}
-              (Arun Prakash)
+              Phone: <a href="tel:+919363332913">+91 93633 32913</a>{' '}
+              (Suhesma Sri)
             </li>
           </ul>
         </article>

@@ -14,6 +14,10 @@ const config: Config = {
   url: 'https://deltisan.com',
   baseUrl: '/',
 
+  markdown: {
+    format: 'detect',
+  },
+
   organizationName: 'qiaben',
   projectName: 'deltisan-com-web',
 
@@ -29,7 +33,7 @@ const config: Config = {
         name: 'Deltisan Engineering',
         url: 'https://deltisan.com',
         email: 'deltisanengineering@gmail.com',
-        telephone: '+91-99435-99093',
+        telephone: '+91-93633-32913',
         address: {
           '@type': 'PostalAddress',
           streetAddress: '1/39, Veerappanur',
@@ -54,7 +58,25 @@ const config: Config = {
       'classic',
       {
         docs: false,
-        blog: false,
+        blog: {
+          path: 'blog',
+          routeBasePath: 'blog',
+          showReadingTime: true,
+          blogTitle: 'Deltisan Journal',
+          blogDescription: 'Notes from the workshop — DFM, fabrication, finishing, and quality.',
+          blogSidebarTitle: 'Recent posts',
+          blogSidebarCount: 'ALL',
+          postsPerPage: 5,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+            title: 'Deltisan Journal',
+            description: 'Notes from the workshop.',
+          },
+          onInlineTags: 'ignore',
+          onInlineAuthors: 'ignore',
+          onUntruncatedBlogPosts: 'ignore',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -78,6 +100,7 @@ const config: Config = {
         { to: '/capabilities', label: 'Capabilities', position: 'left' },
         { to: '/products', label: 'Products', position: 'left' },
         { to: '/process', label: 'Process', position: 'left' },
+        { to: '/blog', label: 'Journal', position: 'left' },
         { to: '/company', label: 'Company', position: 'left' },
         {
           to: '/contact',
@@ -96,6 +119,7 @@ const config: Config = {
             { label: 'Capabilities', to: '/capabilities' },
             { label: 'Products', to: '/products' },
             { label: 'Process', to: '/process' },
+            { label: 'Journal', to: '/blog' },
           ],
         },
         {
