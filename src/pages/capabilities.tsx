@@ -15,9 +15,9 @@ type Capability = {
 
 const capabilities: Capability[] = [
   {
-    eyebrow: 'Engineering · in-house',
+    eyebrow: 'Design',
     title: 'Mechanical design and DFM',
-    desc: 'Drawings, DFM, and tolerance work done by Deltisan engineers — and the same engineers stay on the part through production.',
+    desc: 'Drawings ready for the floor — done by engineers who will be on the shop floor when the part is built.',
     image: '/img/stock/blueprint-1.jpg',
     bullets: [
       '2D drawings and 3D CAD',
@@ -29,9 +29,9 @@ const capabilities: Capability[] = [
     ],
   },
   {
-    eyebrow: 'CNC machining · partner network',
+    eyebrow: 'CNC machining',
     title: 'Turning and milling for precision parts',
-    desc: 'Run through specialist machine shops we vet, brief, and inspect. We pick the right partner for the part — capability, capacity, and consistency.',
+    desc: 'Production runs and one-off parts in steel, aluminium, brass, and stainless. Tooling and fixtures designed alongside the part.',
     image: '/img/stock/cnc-1.jpg',
     reverse: true,
     alt: true,
@@ -45,9 +45,9 @@ const capabilities: Capability[] = [
     ],
   },
   {
-    eyebrow: 'Sheet metal · partner network',
+    eyebrow: 'Sheet metal',
     title: 'Cutting, forming, and joining',
-    desc: 'From single brackets to large enclosures, through fabricators we work with regularly. Consistent bend radii and clean joints because we control the spec, not just the order.',
+    desc: 'From single brackets to large enclosures and frames, with consistent bend radii and clean joints.',
     image: '/img/stock/sheet-metal-2.jpg',
     bullets: [
       'Laser / plasma cutting',
@@ -59,9 +59,9 @@ const capabilities: Capability[] = [
     ],
   },
   {
-    eyebrow: 'Welding & fabrication · partner network',
+    eyebrow: 'Welding & fabrication',
     title: 'MIG, TIG, and structural fabrication',
-    desc: 'Welded under documented procedures by qualified welders in our partner shops. Stress-relieved when the application calls for it.',
+    desc: 'Welded with documented procedures and trained welders. Stress-relieved when the application calls for it.',
     image: '/img/stock/welding-1.jpg',
     reverse: true,
     alt: true,
@@ -75,23 +75,23 @@ const capabilities: Capability[] = [
     ],
   },
   {
-    eyebrow: 'Surface finishing · partner network',
+    eyebrow: 'Surface finishing',
     title: 'Powder coat, paint, and plating',
-    desc: 'Pre-treated, masked, and finished to spec by finishing partners — not just sprayed on. Colour, texture, and thickness controlled and verified.',
+    desc: 'Pre-treated, masked, and finished to your spec — not just sprayed on. Colour and texture controlled.',
     image: '/img/stock/welding-3.jpg',
     bullets: [
       'Powder coating',
       'Wet painting (industrial)',
       'Phosphate pre-treatment',
-      'Zinc plating',
-      'Galvanising',
+      'Zinc plating (outsourced)',
+      'Galvanising (outsourced)',
       'Brushed / polished finishes',
     ],
   },
   {
-    eyebrow: 'Quality control · in-house',
+    eyebrow: 'Quality control',
     title: 'Calibrated, documented, traceable',
-    desc: '100% inspection on critical dimensions — done by Deltisan engineers before anything leaves us. Calibrated instruments, inspection reports tied to the batch.',
+    desc: '100% inspection on critical dimensions, calibrated instruments, and inspection reports tied to the batch.',
     image: '/img/stock/cnc-2.jpg',
     reverse: true,
     alt: true,
@@ -129,34 +129,13 @@ export default function Capabilities(): ReactNode {
           aria-hidden="true"
         />
         <p className={styles.eyebrow}>Capabilities</p>
-        <h1 className={styles.title}>Engineering and QC, in-house. Production, where it runs best.</h1>
+        <h1 className={styles.title}>Design and manufacturing under one roof.</h1>
         <p className={styles.subtitle}>
-          Deltisan is the engineering team and the inspection bench.
-          Production runs through a vetted network of specialist workshops —
-          chosen per part, briefed by us, and inspected before anything ships.
+          Mechanical design, CNC machining, sheet-metal fabrication, welding,
+          surface finishing, and quality control — six capabilities owned by
+          one team.
         </p>
         <Link className={styles.cta} to="/schedule">Book a call</Link>
-      </section>
-
-      <section className={styles.proseSection} style={{ paddingTop: 40, paddingBottom: 0 }}>
-        <div className={styles.prose}>
-          <p className={styles.lead}>
-            How it works.
-          </p>
-          <p>
-            Most workshops do one or two things well and try to win every
-            order. We do it differently. Deltisan is the engineering and
-            quality team — we own design, sourcing, oversight, and
-            inspection. Production happens at the partner workshop best
-            suited to your part, not the one we happen to run.
-          </p>
-          <p>
-            For you, that means a single accountable point of contact, a
-            shop matched to the job, and a part that is inspected by us
-            before it leaves. For us, it means we never compromise capability
-            for the sake of keeping a machine busy.
-          </p>
-        </div>
       </section>
 
       <section className={styles.processSection} style={{ paddingTop: 40, paddingBottom: 80 }}>
@@ -192,13 +171,13 @@ export default function Capabilities(): ReactNode {
       </section>
 
       <section className={styles.materialsSection}>
-        <p className={styles.eyebrow}>Materials we spec and source</p>
+        <p className={styles.eyebrow}>Materials</p>
         <h2 className={styles.title} style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)' }}>
           Steel, stainless, aluminium, and the rest.
         </h2>
         <p className={styles.subtitle}>
-          Specified by Deltisan, sourced from vetted suppliers with traceable
-          mill certificates. Specials on request.
+          Sourced from vetted suppliers with traceable mill certificates.
+          Common stock kept on the floor; specials on request.
         </p>
         <div className={styles.materialsGrid}>
           {materials.map((m) => (
@@ -214,7 +193,7 @@ export default function Capabilities(): ReactNode {
         <div className={styles.standardsHead}>
           <p className={styles.eyebrow}>Tolerances and standards</p>
           <h2 className={styles.title} style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)' }}>
-            What we hold partners to. What we inspect.
+            Built to spec. Inspected to spec.
           </h2>
         </div>
         <div className={styles.standardsGrid}>

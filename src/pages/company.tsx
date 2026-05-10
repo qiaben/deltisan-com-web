@@ -38,14 +38,14 @@ const values = [
 
 const principles = [
   {
-    title: 'One team accountable, end to end',
+    title: 'One team, end to end',
     desc:
-      'The person who quotes your job is the same person whose drawing it is built to and whose name is on the inspection report. Production may run at a partner shop, but the engineering, the spec, the oversight, and the QC stay with us. Fewer handoffs, fewer misunderstandings, and one team to call when something needs to change.',
+      'Design, manufacturing, finishing, and inspection all sit under the same roof. The person who quotes a job is connected to the person who runs it on the floor. There are fewer handoffs, fewer misunderstandings, and a shorter path between a question and an answer.',
   },
   {
     title: 'Drawings before assumptions',
     desc:
-      'When something on a drawing is not clear, we ask. When something is going to cost more than it should, we say so before the drawing goes to a workshop. We would rather spend an extra ten minutes on a phone call than ship the wrong part.',
+      'When something on a drawing is not clear, we ask. When something is going to cost more than it should, we say so before we cut. We would rather spend an extra ten minutes on a phone call than ship the wrong part.',
   },
   {
     title: 'Records that hold up',
@@ -83,25 +83,23 @@ export default function Company(): ReactNode {
       <section className={styles.proseSection}>
         <div className={styles.prose}>
           <p className={styles.lead}>
-            Deltisan Engineering is an engineering-led manufacturing
-            company. We design your part, source the right production
-            partner, manage the run, inspect the output, and ship.
+            Deltisan Engineering is a design and manufacturing company. We
+            take ideas from sketch to shipped product — design, prototype,
+            machine, fabricate, finish, and ship — under one roof.
           </p>
           <p>
-            We are not a workshop trying to win every order. We are an
-            engineering and QC team with a vetted network of specialist
-            workshops behind us — sheet-metal fabricators, machine shops,
-            welders, and finishers we know well and have worked with on real
-            parts. For each job, we pick the partner whose capability and
-            capacity are actually right for the part, not the partner whose
-            machine happens to be free.
+            Most of what we make is bespoke. Brackets, frames, enclosures,
+            fixtures, machined components, and full sub-assemblies built to a
+            customer&apos;s drawing or designed alongside our engineers. The
+            customers who come back to us tend to share something in common:
+            they care about how the part fits, how it looks once it is
+            finished, and whether it shows up when it was promised.
           </p>
           <p>
-            The customers who come back to us tend to share something in
-            common: they care about how the part fits, how it looks when it
-            is finished, and whether it shows up when it was promised. They
-            also like having one accountable team, not a list of vendors to
-            chase.
+            We are not trying to be the cheapest workshop. We are trying to be
+            the workshop you actually want to keep working with — the one that
+            answers the phone, asks the right questions before cutting, and
+            ships parts that don&apos;t need to come back.
           </p>
         </div>
       </section>
@@ -158,15 +156,14 @@ export default function Company(): ReactNode {
             aria-hidden="true"
           />
           <div className={styles.workshopCard}>
-            <p className={styles.workshopEyebrow}>Studio + network</p>
+            <p className={styles.workshopEyebrow}>The workshop</p>
             <h2 className={styles.workshopTitle}>
-              Engineering and QC, in-house. Production, where it runs best.
+              Where the parts get made.
             </h2>
             <p className={styles.workshopDesc}>
-              Our design office and inspection bench sit in Coimbatore.
-              Production happens at specialist partner workshops we vet and
-              brief — chosen per part for capability, capacity, finish, and
-              lead time.
+              Design office, machine shop, fabrication bay, finishing line,
+              and inspection — laid out so the part moves the way the work
+              flows, not the other way around.
             </p>
             <p className={styles.workshopAddress}>
               <strong>Deltisan Engineering</strong>

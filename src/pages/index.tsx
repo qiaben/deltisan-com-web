@@ -52,15 +52,14 @@ function HeroVisual(): ReactNode {
 function Hero(): ReactNode {
   return (
     <section className={styles.hero}>
-      <span className={styles.heroBadge}>Engineering · Sourcing · QC</span>
+      <span className={styles.heroBadge}>Engineering · Design · Manufacturing</span>
       <h1 className={styles.heroTitle}>
-        Designed, sourced, inspected,{' '}
-        <span className={styles.gradientText}>shipped</span>.
+        We design and build{' '}
+        <span className={styles.gradientText}>things that last</span>.
       </h1>
       <p className={styles.heroSubtitle}>
-        Deltisan is your engineering and QC team. Production happens at the
-        workshop best suited to your part — vetted, managed, and inspected
-        before it leaves us.
+        We take ideas from sketch to shipped product — design, prototype,
+        manufacture, and finish — under one roof.
       </p>
       <div className={styles.heroCtas}>
         <Link className={styles.primaryCta} to="/schedule">
@@ -110,28 +109,28 @@ function ProductTile({ tile }: { tile: Tile }): ReactNode {
 function ProductTiles(): ReactNode {
   const tiles: Tile[] = [
     {
-      eyebrow: 'Engineering',
+      eyebrow: 'Design',
       title: 'From rough sketch to production-ready CAD.',
       subtitle:
-        'Mechanical design, DFM review, and tolerance analysis — by engineers who stay on the part through production, not just the drawing.',
+        'Mechanical design, DFM review, and tolerance analysis — by engineers who will be on the shop floor when it is built.',
       link: '/capabilities',
       linkLabel: 'Learn more',
       image: '/img/stock/blueprint-1.jpg',
     },
     {
-      eyebrow: 'Production',
-      title: 'Machined, fabricated, finished — by the right specialist.',
+      eyebrow: 'Manufacturing',
+      title: 'Machined, fabricated, finished.',
       subtitle:
-        'Sheet metal, CNC machining, welding, and finishing through a network of vetted workshops we brief, manage, and inspect.',
+        'Sheet metal, CNC machining, welding, and surface finishing — small to mid-volume runs with consistent QC.',
       link: '/capabilities',
       linkLabel: 'Learn more',
       image: '/img/stock/cnc-1.jpg',
     },
     {
       eyebrow: 'End to end',
-      title: 'One partner. One point of accountability.',
+      title: 'One partner, from the first concept to the last carton.',
       subtitle:
-        'Deltisan owns the engineering, picks the right workshop, runs QC, and ships. You deal with us; we deal with everyone else.',
+        'Skip the handoffs. Deltisan handles design, prototyping, production, finishing, and dispatch in-house.',
       link: '/process',
       linkLabel: 'See the process',
       image: '/img/stock/workshop-1.jpg',
@@ -139,18 +138,18 @@ function ProductTiles(): ReactNode {
     },
     {
       eyebrow: 'Products',
-      title: 'Custom assemblies, repeatably delivered.',
+      title: 'Custom assemblies, repeatably built.',
       subtitle:
-        'Brackets, frames, enclosures, and bespoke assemblies for industrial and OEM customers — engineered, built, and inspected through one team.',
+        'Brackets, frames, enclosures, and bespoke assemblies for industrial and OEM customers.',
       link: '/products',
       linkLabel: 'Learn more',
       image: '/img/stock/sheet-metal-1.jpg',
     },
     {
       eyebrow: 'Quality',
-      title: 'Inspected before it ships. Every time.',
+      title: 'Built to spec. Inspected to spec.',
       subtitle:
-        'Done by Deltisan engineers — documented tolerances, calibrated instruments, and 100% inspection on critical dimensions.',
+        'Documented tolerances, calibrated instruments, and 100% inspection on critical dimensions.',
       link: '/process',
       linkLabel: 'Learn more',
       image: '/img/stock/blueprint-2.jpg',
@@ -196,15 +195,14 @@ function Gallery(): ReactNode {
   return (
     <section className={styles.gallerySection}>
       <div className={styles.galleryHead}>
-        <p className={styles.sectionEyebrow}>On the shop floor</p>
+        <p className={styles.sectionEyebrow}>In the workshop</p>
         <h2 className={styles.sectionTitle}>
           Real machines.{' '}
           <span className={styles.gradientText}>Real engineers.</span>
         </h2>
         <p className={styles.sectionSubtitle}>
-          A look at the kind of work that flows through Deltisan — cut,
-          formed, welded, and finished by partner workshops we brief and
-          inspect.
+          A look inside the shop floor where parts get cut, formed, welded,
+          and finished.
         </p>
       </div>
       <div className={styles.galleryGrid}>
@@ -274,15 +272,14 @@ function Capabilities(): ReactNode {
 
   return (
     <section className={styles.modulesSection}>
-      <p className={styles.sectionEyebrow}>How we work</p>
+      <p className={styles.sectionEyebrow}>What we do</p>
       <h2 className={styles.sectionTitle}>
-        One accountable team.{' '}
-        <span className={styles.gradientText}>Every step managed.</span>
+        One workshop.{' '}
+        <span className={styles.gradientText}>Every step covered.</span>
       </h2>
       <p className={styles.sectionSubtitle}>
-        Deltisan owns engineering, sourcing, and QC. Production happens at
-        the partner workshop best suited to your part — and we make sure it
-        goes right.
+        Deltisan combines design and manufacturing capabilities so a single
+        team owns the part from drawing to dispatch.
       </p>
       <div className={styles.moduleGrid}>
         {items.map((m) => (
