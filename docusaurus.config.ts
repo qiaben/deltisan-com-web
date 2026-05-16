@@ -102,6 +102,18 @@ const config: Config = {
         { to: '/process', label: 'Process', position: 'left' },
         { to: '/blog', label: 'Journal', position: 'left' },
         { to: '/company', label: 'Company', position: 'left' },
+        {
+          href: 'tel:+17206660405',
+          label: '720-666-0405',
+          position: 'right',
+          className: 'navbar-phone',
+        },
+        {
+          href: 'mailto:info@deltisan.com',
+          label: 'info@deltisan.com',
+          position: 'right',
+          className: 'navbar-email',
+        },
         { to: '/contact', label: 'Contact', position: 'right' },
         {
           to: '/schedule',
