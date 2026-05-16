@@ -46,7 +46,7 @@ const steps = [
   },
   {
     title: 'Pack & dispatch',
-    desc: 'Sub-assembly, fitment checks, and ready-to-ship packaging. Pan-India dispatch with export support on request.',
+    desc: 'Sub-assembly, fitment checks, and ready-to-ship packaging. Nationwide US dispatch with export support on request.',
     image: '/img/stock/workshop-1.jpg',
   },
 ];

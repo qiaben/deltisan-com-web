@@ -30,14 +30,20 @@ export default function Contact(): ReactNode {
               info@deltisan.com
             </a>
           </div>
+          <div className={styles.contactCard}>
+            <div className={styles.contactLabel}>Phone</div>
+            <a className={styles.contactValue} href="tel:+17206660405">
+              720-666-0405
+            </a>
+          </div>
           <div className={styles.contactCard} style={{ gridColumn: '1 / -1' }}>
-            <div className={styles.contactLabel}>India Head Office</div>
+            <div className={styles.contactLabel}>Head Office</div>
             <div className={styles.contactValue}>
               Deltisan Engineering
               <br />
-              1/39, Veerappanur,
+              14922 Chicago St,
               <br />
-              Coimbatore, Tamil Nadu 641105, India
+              Parker, CO 80134, United States
             </div>
           </div>
         </div>

@@ -168,9 +168,11 @@ export default function Company(): ReactNode {
             <p className={styles.workshopAddress}>
               <strong>Deltisan Engineering</strong>
               <br />
-              1/39, Veerappanur,
+              14922 Chicago St,
               <br />
-              Coimbatore, Tamil Nadu 641105, India
+              Parker, CO 80134, United States
+              <br />
+              <a href="tel:+17206660405">720-666-0405</a>
             </p>
             <Link className={styles.cta} to="/schedule">
               Book a call

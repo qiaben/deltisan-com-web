@@ -50,7 +50,7 @@ export default function Privacy(): ReactNode {
             <li>To respond to enquiries and prepare quotations.</li>
             <li>To design, manufacture, and deliver products you order.</li>
             <li>To send invoices and operational communications.</li>
-            <li>To comply with applicable Indian law and tax requirements.</li>
+            <li>To comply with applicable US and Colorado law and tax requirements.</li>
             <li>To improve our website and services.</li>
           </ul>
           <p>We do not sell personal information.</p>
@@ -85,8 +85,8 @@ export default function Privacy(): ReactNode {
           <p>
             We retain customer records, drawings, and correspondence for as
             long as needed to fulfil our contractual obligations and to
-            comply with statutory record-keeping requirements under Indian
-            law.
+            comply with statutory record-keeping requirements under US
+            federal and Colorado state law.
           </p>
 
           <Heading as="h2">6. Security</Heading>
@@ -118,7 +118,7 @@ export default function Privacy(): ReactNode {
           <Heading as="h2">9. Contact</Heading>
           <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
             <li><strong>Deltisan Engineering</strong></li>
-            <li>1/39, Veerappanur, Coimbatore, Tamil Nadu 641105, India</li>
+            <li>14922 Chicago St, Parker, CO 80134, United States</li>
             <li>
               Email:{' '}
               <a href="mailto:info@deltisan.com">
@@ -126,8 +126,7 @@ export default function Privacy(): ReactNode {
               </a>
             </li>
             <li>
-              Phone: <a href="tel:+919363332913">+91 93633 32913</a>{' '}
-              (Suhesma Sri)
+              Phone: <a href="tel:+17206660405">720-666-0405</a>
             </li>
           </ul>
         </article>

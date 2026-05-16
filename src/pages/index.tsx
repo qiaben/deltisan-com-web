@@ -41,7 +41,7 @@ function HeroVisual(): ReactNode {
           </div>
           <div className={styles.specRow}>
             <span className={styles.specKey}>Origin</span>
-            <span className={styles.specVal}>India</span>
+            <span className={styles.specVal}>Parker, Colorado</span>
           </div>
         </aside>
       </div>
@@ -175,7 +175,7 @@ function HeroStrip(): ReactNode {
       aria-label="Deltisan workshop">
       <div className={styles.heroStripCaption}>
         <h3 className={styles.heroStripTitle}>
-          Built for OEMs and industrial customers across India.
+          Built for OEMs and industrial customers across the United States.
         </h3>
         <span className={styles.heroStripMeta}>The workshop</span>
       </div>
@@ -266,7 +266,7 @@ function Capabilities(): ReactNode {
     {
       image: '/img/stock/workshop-1.jpg',
       title: 'Logistics',
-      desc: 'Pan-India dispatch, with export support on request.',
+      desc: 'Nationwide US dispatch, with export support on request.',
     },
   ];
 

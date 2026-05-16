@@ -129,9 +129,11 @@ export default function Terms(): ReactNode {
           <Heading as="h2">12. Governing Law</Heading>
           <p>
             These Terms and any contract formed under them are governed by
-            the laws of India. The courts of Coimbatore, Tamil Nadu have
-            exclusive jurisdiction over any dispute, except that we may
-            seek injunctive relief in any court of competent jurisdiction.
+            the laws of the State of Colorado, United States, without regard
+            to its conflict-of-laws principles. The state and federal courts
+            located in Douglas County, Colorado have exclusive jurisdiction
+            over any dispute, except that we may seek injunctive relief in
+            any court of competent jurisdiction.
           </p>
 
           <Heading as="h2">13. Changes to Terms</Heading>
@@ -144,7 +146,7 @@ export default function Terms(): ReactNode {
           <Heading as="h2">14. Contact</Heading>
           <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
             <li><strong>Deltisan Engineering</strong></li>
-            <li>1/39, Veerappanur, Coimbatore, Tamil Nadu 641105, India</li>
+            <li>14922 Chicago St, Parker, CO 80134, United States</li>
             <li>
               Email:{' '}
               <a href="mailto:info@deltisan.com">
@@ -152,8 +154,7 @@ export default function Terms(): ReactNode {
               </a>
             </li>
             <li>
-              Phone: <a href="tel:+919363332913">+91 93633 32913</a>{' '}
-              (Suhesma Sri)
+              Phone: <a href="tel:+17206660405">720-666-0405</a>
             </li>
           </ul>
         </article>
