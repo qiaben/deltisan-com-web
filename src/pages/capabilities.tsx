@@ -107,14 +107,14 @@ const capabilities: Capability[] = [
 ];
 
 const materials = [
-  { name: 'Mild steel', meta: 'Sheet, plate, sections' },
-  { name: 'Stainless 304 / 316', meta: 'Sheet, sections, fasteners' },
-  { name: 'Aluminium 6061 / 5052', meta: 'Sheet, plate, extrusion' },
-  { name: 'Brass', meta: 'Bar stock, components' },
-  { name: 'Cast iron', meta: 'Machined components' },
-  { name: 'Galvanised steel', meta: 'Pre-galv sheet and tube' },
-  { name: 'Tool steel', meta: 'Tooling and fixtures' },
-  { name: 'Engineering plastics', meta: 'Delrin, nylon, HDPE on request' },
+  { name: 'Aluminum 6061 / 7075', meta: 'Sheet, plate, bar — aerospace and structural' },
+  { name: 'Stainless 304 / 316 / 17-4', meta: 'Sheet, sections, fasteners' },
+  { name: 'Carbon steel (A36 / 1018 / 1045)', meta: 'Sheet, plate, structural sections' },
+  { name: 'Tool steel (D2 / A2 / H13)', meta: 'Tooling and fixtures' },
+  { name: 'Titanium Grade 5 (6Al-4V)', meta: 'Aerospace and high-strength parts' },
+  { name: 'Brass and bronze', meta: 'Bar stock, bushings, components' },
+  { name: 'Galvanized steel', meta: 'Pre-galv sheet and tube' },
+  { name: 'Engineering plastics', meta: 'Delrin, nylon, UHMW, HDPE on request' },
 ];
 
 export default function Capabilities(): ReactNode {

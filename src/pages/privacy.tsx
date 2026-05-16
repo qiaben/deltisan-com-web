@@ -13,11 +13,11 @@ export default function Privacy(): ReactNode {
           <Heading as="h1">Privacy Policy</Heading>
           <p className={styles.legalMeta}>
             <strong>Effective Date:</strong> May 8, 2026 &nbsp;|&nbsp;{' '}
-            <strong>Last Updated:</strong> May 8, 2026
+            <strong>Last Updated:</strong> May 15, 2026
           </p>
 
           <p>
-            Deltisan Engineering (&ldquo;Deltisan,&rdquo; &ldquo;we,&rdquo;
+            Deltisan Engineering LLC (&ldquo;Deltisan,&rdquo; &ldquo;we,&rdquo;
             &ldquo;us,&rdquo; or &ldquo;our&rdquo;) respects the privacy of
             visitors to{' '}
             <a href="https://deltisan.com">deltisan.com</a> and of our
@@ -108,16 +108,68 @@ export default function Privacy(): ReactNode {
             .
           </p>
 
-          <Heading as="h2">8. Changes to This Policy</Heading>
+          <Heading as="h2">8. Colorado Privacy Act (CPA) Notice</Heading>
+          <p>
+            If you are a Colorado resident, the Colorado Privacy Act gives you
+            specific rights with respect to the personal data we hold about
+            you. Subject to verification of your identity and applicable
+            exemptions, you have the right to:
+          </p>
+          <ul>
+            <li>
+              <strong>Right to access.</strong> Confirm whether we are
+              processing your personal data and obtain a copy of that data.
+            </li>
+            <li>
+              <strong>Right to correct.</strong> Ask us to correct inaccurate
+              personal data.
+            </li>
+            <li>
+              <strong>Right to delete.</strong> Request deletion of personal
+              data we hold about you.
+            </li>
+            <li>
+              <strong>Right to data portability.</strong> Receive your data in
+              a portable, machine-readable format where technically feasible.
+            </li>
+            <li>
+              <strong>Right to opt out</strong> of (i) the sale of personal
+              data, (ii) targeted advertising, and (iii) certain types of
+              automated profiling. <em>We do not sell personal data, do not
+              run targeted advertising, and do not use automated profiling
+              that produces legal or similarly significant effects.</em>
+            </li>
+            <li>
+              <strong>Right to appeal.</strong> If we decline a privacy
+              request, you may appeal our decision by writing to the same
+              address below; we will respond within 45 days. If you are
+              unsatisfied with the appeal outcome, you may contact the
+              Colorado Attorney General at{' '}
+              <a href="https://coag.gov/" target="_blank" rel="noreferrer">
+                coag.gov
+              </a>
+              .
+            </li>
+          </ul>
+          <p>
+            To exercise any of these rights, send your request to{' '}
+            <a href="mailto:info@deltisan.com">info@deltisan.com</a>{' '}
+            with the subject line &ldquo;Colorado Privacy Request.&rdquo; You
+            may also designate an authorised agent to make a request on your
+            behalf; we will request verification of the agent&apos;s
+            authority.
+          </p>
+
+          <Heading as="h2">9. Changes to This Policy</Heading>
           <p>
             We may update this policy from time to time. The
             &ldquo;Last Updated&rdquo; date at the top reflects the most
             recent revision.
           </p>
 
-          <Heading as="h2">9. Contact</Heading>
+          <Heading as="h2">10. Contact</Heading>
           <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
-            <li><strong>Deltisan Engineering</strong></li>
+            <li><strong>Deltisan Engineering LLC</strong></li>
             <li>14922 Chicago St, Parker, CO 80134, United States</li>
             <li>
               Email:{' '}

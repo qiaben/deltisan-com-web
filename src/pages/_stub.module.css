@@ -802,3 +802,140 @@ a.contactValue:hover {
   margin: 0 0 24px;
   font-size: 0.86rem;
 }
+
+/* Request a Quote */
+.quoteSection {
+  padding: 0 clamp(20px, 4vw, 60px) 60px;
+  max-width: 860px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.quoteForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--d-bg-soft);
+  border: 1px solid var(--d-border);
+  border-radius: 22px;
+  padding: clamp(24px, 4vw, 44px);
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 640px) {
+  .formRow { grid-template-columns: 1fr; }
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.formField label {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--d-text);
+  letter-spacing: -0.005em;
+}
+
+.formField input[type='text'],
+.formField input[type='email'],
+.formField input[type='tel'],
+.formField select,
+.formField textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 11px 14px;
+  border: 1px solid var(--d-border);
+  border-radius: 10px;
+  background: var(--d-bg);
+  color: var(--d-text);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  width: 100%;
+}
+
+.formField input:focus,
+.formField select:focus,
+.formField textarea:focus {
+  outline: none;
+  border-color: var(--d-accent);
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.12);
+}
+
+.formField input[type='file'] {
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 10px;
+  border: 1px dashed var(--d-border);
+  border-radius: 10px;
+  background: var(--d-bg);
+  color: var(--d-text);
+}
+
+.formField textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.formHelp {
+  font-size: 0.82rem;
+  color: var(--d-text-soft);
+  line-height: 1.4;
+}
+
+.formCheckbox {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400 !important;
+  color: var(--d-text-soft);
+  cursor: pointer;
+}
+
+.formCheckbox input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--d-accent);
+}
+
+.ndaNote {
+  padding: 16px 18px;
+  border-radius: 12px;
+  background: rgba(29, 78, 216, 0.06);
+  border: 1px solid rgba(29, 78, 216, 0.15);
+  font-size: 0.9rem;
+  color: var(--d-text);
+  line-height: 1.5;
+}
+
+.ndaNote strong {
+  color: var(--d-accent);
+}
+
+/* Contact map + hours */
+.mapSection {
+  padding: 0 clamp(20px, 4vw, 60px) 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.mapWrap {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--d-border);
+}
+
+.contactHours {
+  margin-top: 10px;
+  font-size: 0.88rem;
+  color: var(--d-text-soft);
+}

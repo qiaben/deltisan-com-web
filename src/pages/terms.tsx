@@ -145,7 +145,7 @@ export default function Terms(): ReactNode {
 
           <Heading as="h2">14. Contact</Heading>
           <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
-            <li><strong>Deltisan Engineering</strong></li>
+            <li><strong>Deltisan Engineering LLC</strong></li>
             <li>14922 Chicago St, Parker, CO 80134, United States</li>
             <li>
               Email:{' '}

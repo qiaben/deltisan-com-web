@@ -167,6 +167,119 @@ function ProductTiles(): ReactNode {
   );
 }
 
+function TrustBadges(): ReactNode {
+  const badges = [
+    {
+      title: 'Made in USA',
+      subtitle: 'Parker, Colorado',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M3 6h18" /><path d="M3 10h18" /><path d="M3 14h18" /><path d="M3 18h18" />
+          <rect x="3" y="6" width="9" height="6" fill="currentColor" stroke="none" opacity="0.18" />
+          <circle cx="5.5" cy="8" r="0.6" fill="currentColor" stroke="none" /><circle cx="8" cy="8" r="0.6" fill="currentColor" stroke="none" /><circle cx="10.5" cy="8" r="0.6" fill="currentColor" stroke="none" />
+          <circle cx="6.5" cy="10" r="0.6" fill="currentColor" stroke="none" /><circle cx="9" cy="10" r="0.6" fill="currentColor" stroke="none" />
+        </svg>
+      ),
+    },
+    {
+      title: 'Woman-Owned',
+      subtitle: 'Small business',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <circle cx="12" cy="9" r="5" /><path d="M12 14v8" /><path d="M9 19h6" />
+        </svg>
+      ),
+    },
+    {
+      title: 'ISO 9001',
+      subtitle: 'Pursuing certification',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5l-8-3z" /><path d="m9 12 2 2 4-4" />
+        </svg>
+      ),
+    },
+    {
+      title: 'Small Business',
+      subtitle: 'US registered',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M3 21V9l9-6 9 6v12" /><path d="M9 21V12h6v9" /><path d="M3 21h18" />
+        </svg>
+      ),
+    },
+  ];
+  return (
+    <section className={styles.trustSection} aria-label="Credentials">
+      <div className={styles.trustGrid}>
+        {badges.map((b) => (
+          <div key={b.title} className={styles.trustBadge}>
+            <div className={styles.trustIcon}>{b.icon}</div>
+            <div className={styles.trustText}>
+              <strong>{b.title}</strong>
+              <span>{b.subtitle}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function Industries(): ReactNode {
+  const items = [
+    {
+      title: 'Aerospace',
+      desc: 'Fixtures, brackets, mounts, and structural sub-assemblies built to drawing for aerospace primes and Tier-1 suppliers.',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M21 16v-2L13 9V4a1.5 1.5 0 0 0-3 0v5L2 14v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5L21 16z" />
+        </svg>
+      ),
+    },
+    {
+      title: 'Oil, gas & energy',
+      desc: 'Skids, frames, brackets, and machined parts for upstream, midstream, and renewable energy customers across the Rockies.',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M12 3s5 5 5 10a5 5 0 0 1-10 0c0-5 5-10 5-10z" /><path d="M12 13c0 1.5-1 2.5-2 2.5" />
+        </svg>
+      ),
+    },
+    {
+      title: 'Industrial machinery & OEM',
+      desc: 'Custom brackets, frames, enclosures, weldments, and machined components for industrial OEMs &mdash; small to mid-volume runs.',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="3" /><path d="M12 1v6M12 17v6M4.2 4.2l4.3 4.3M15.5 15.5l4.3 4.3M1 12h6M17 12h6M4.2 19.8l4.3-4.3M15.5 8.5l4.3-4.3" />
+        </svg>
+      ),
+    },
+  ];
+  return (
+    <section className={styles.industriesSection}>
+      <p className={styles.sectionEyebrow}>Industries we serve</p>
+      <h2 className={styles.sectionTitle}>
+        Built for the buyers{' '}
+        <span className={styles.gradientText}>who depend on tolerances.</span>
+      </h2>
+      <p className={styles.sectionSubtitle}>
+        Our customers ship products where fitment, finish, and on-time delivery
+        are non-negotiable. We work with them as a single, accountable team.
+      </p>
+      <div className={styles.industriesGrid}>
+        {items.map((i) => (
+          <article key={i.title} className={styles.industryCard}>
+            <div className={styles.industryIcon}>{i.icon}</div>
+            <h3 className={styles.industryTitle}>{i.title}</h3>
+            <p className={styles.industryDesc} dangerouslySetInnerHTML={{__html: i.desc}} />
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function HeroStrip(): ReactNode {
   return (
     <section
@@ -329,8 +442,10 @@ export default function Home(): ReactNode {
       description="Deltisan is an engineering company that designs and produces precision-built products. End-to-end: design, prototyping, manufacturing, finishing, and dispatch.">
       <div className={styles.page}>
         <Hero />
+        <TrustBadges />
         <HeroStrip />
         <ProductTiles />
+        <Industries />
         <Capabilities />
         <Gallery />
         <Closing />

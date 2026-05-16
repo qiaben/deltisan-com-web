@@ -675,3 +675,136 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/* Trust badges */
+.trustSection {
+  padding: 30px clamp(20px, 4vw, 60px) 50px;
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.trustGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  background: var(--d-bg-soft);
+  border-radius: 18px;
+  padding: 22px clamp(16px, 3vw, 40px);
+}
+
+@media (max-width: 800px) {
+  .trustGrid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+}
+@media (max-width: 460px) {
+  .trustGrid { grid-template-columns: 1fr; }
+}
+
+.trustBadge {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 6px 4px;
+}
+
+.trustIcon {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  color: var(--d-accent);
+  background: rgba(29, 78, 216, 0.08);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trustIcon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.trustText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.trustText strong {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--d-text);
+  letter-spacing: -0.01em;
+}
+
+.trustText span {
+  font-size: 0.78rem;
+  color: var(--d-text-soft);
+  margin-top: 2px;
+}
+
+/* Industries served */
+.industriesSection {
+  padding: 100px clamp(20px, 4vw, 60px) 60px;
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.industriesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 50px;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .industriesGrid { grid-template-columns: 1fr; }
+}
+
+.industryCard {
+  background: var(--d-bg-soft);
+  border-radius: 22px;
+  padding: 32px 28px;
+  border: 1px solid var(--d-border);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.industryCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+}
+
+.industryIcon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(29, 78, 216, 0.1);
+  color: var(--d-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.industryIcon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.industryTitle {
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 10px;
+  color: var(--d-text);
+}
+
+.industryDesc {
+  font-size: 1rem;
+  line-height: 1.45;
+  color: var(--d-text-soft);
+  margin: 0;
+}
