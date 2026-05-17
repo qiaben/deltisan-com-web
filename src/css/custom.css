@@ -73,6 +73,7 @@
   --d-bg-soft: #14192a;
   --d-text: #f5f5f7;
   --d-text-soft: #a1a1a6;
+  --d-accent: #779eff;
   --d-border: #2a3142;
 }
 
@@ -159,7 +160,7 @@ body {
 
 .navbar-phone:hover,
 .navbar-email:hover {
-  background: rgba(29, 78, 216, 0.08);
+  background: color-mix(in srgb, var(--d-accent) 12%, transparent);
   color: var(--d-accent) !important;
   text-decoration: none;
 }
