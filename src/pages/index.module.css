@@ -71,7 +71,7 @@
 }
 
 .primaryCta {
-  background: var(--d-accent);
+  background: var(--d-cta-bg);
   color: #ffffff;
   padding: 14px 28px;
   border-radius: 980px;
@@ -82,7 +82,7 @@
 }
 
 .primaryCta:hover {
-  background: #173eaa;
+  background: var(--d-cta-bg-hover);
   color: #ffffff;
   text-decoration: none;
 }

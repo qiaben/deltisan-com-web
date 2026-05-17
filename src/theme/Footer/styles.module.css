@@ -57,7 +57,7 @@
 }
 
 .ctaPrimary {
-  background: var(--d-accent, #1d4ed8);
+  background: var(--d-cta-bg, #1d4ed8);
   color: #ffffff !important;
   padding: 12px 22px;
   border-radius: 980px;
@@ -68,7 +68,7 @@
 }
 
 .ctaPrimary:hover {
-  background: var(--ifm-color-primary-darker, #173eaa);
+  background: var(--d-cta-bg-hover, #173eaa);
   color: #ffffff !important;
   text-decoration: none;
 }

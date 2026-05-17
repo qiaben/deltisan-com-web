@@ -44,6 +44,8 @@
   --d-text: #1d1d1f;
   --d-text-soft: #6e6e73;
   --d-accent: #1d4ed8;
+  --d-cta-bg: #1d4ed8;
+  --d-cta-bg-hover: #173eaa;
   --d-accent-warm: #f59e0b;
   --d-border: #d2d2d7;
 }
@@ -74,6 +76,8 @@
   --d-text: #f5f5f7;
   --d-text-soft: #a1a1a6;
   --d-accent: #779eff;
+  --d-cta-bg: #3b82f6;
+  --d-cta-bg-hover: #2563eb;
   --d-border: #2a3142;
 }
 
@@ -130,7 +134,7 @@ body {
 }
 
 .navbar-cta {
-  background: var(--d-accent);
+  background: var(--d-cta-bg);
   color: #ffffff !important;
   padding: 6px 14px !important;
   border-radius: 980px;
@@ -139,7 +143,7 @@ body {
 }
 
 .navbar-cta:hover {
-  background: var(--ifm-color-primary-darker);
+  background: var(--d-cta-bg-hover);
   color: #ffffff !important;
   text-decoration: none;
 }
@@ -207,7 +211,11 @@ body {
 }
 
 .button--primary {
-  background: var(--d-accent);
+  background: var(--d-cta-bg);
+}
+
+.button--primary:hover {
+  background: var(--d-cta-bg-hover);
 }
 
 .footer {
