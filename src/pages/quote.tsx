@@ -3,7 +3,7 @@ import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import styles from './_stub.module.css';
 
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/REPLACE_WITH_YOUR_ID';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xbdbrkar';
 
 export default function Quote(): ReactNode {
   return (
