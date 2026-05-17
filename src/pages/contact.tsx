@@ -88,13 +88,14 @@ export default function Contact(): ReactNode {
       <section className={styles.stub} style={{ paddingTop: 60, paddingBottom: 100 }}>
         <p className={styles.eyebrow}>Service area</p>
         <h2 className={styles.title} style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)' }}>
-          Built in Parker. Shipped across Colorado and the country.
+          Centennial-area precision engineering, shipped nationwide.
         </h2>
         <p className={styles.subtitle}>
-          We serve customers across the Denver metro and Front Range &mdash;
-          Parker, Lakewood, Aurora, Centennial, Englewood, Highlands Ranch,
-          Castle Rock, Denver, Boulder, and Colorado Springs &mdash; with
-          nationwide US shipping and export support on request.
+          We serve customers across the south Denver metro and Front Range
+          &mdash; Centennial, Parker, Highlands Ranch, Englewood, Greenwood
+          Village, Lone Tree, Castle Rock, Denver, Aurora, and Colorado
+          Springs &mdash; with nationwide US shipping and export support on
+          request.
         </p>
       </section>
     </Layout>

@@ -138,10 +138,11 @@ export default function Footer(): ReactNode {
         </div>
 
         <p className={styles.serviceArea}>
-          <strong>Serving:</strong> Parker · Denver · Lakewood · Aurora ·
-          Centennial · Englewood · Highlands Ranch · Castle Rock · Boulder
-          · Colorado Springs &mdash; with nationwide US shipping and export
-          support on request.
+          <strong>Serving Centennial &amp; the south Denver metro:</strong>{' '}
+          Centennial · Parker · Highlands Ranch · Englewood · Greenwood
+          Village · Lone Tree · Castle Rock · Denver · Aurora · Colorado
+          Springs &mdash; with nationwide US shipping and export support
+          on request.
         </p>
 
         <div className={styles.bottomBar}>
