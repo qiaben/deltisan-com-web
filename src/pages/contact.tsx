@@ -47,9 +47,11 @@ export default function Contact(): ReactNode {
             <div className={styles.contactValue}>
               Deltisan Engineering LLC
               <br />
-              14922 Chicago St,
+              6222 E Pine Lane,
               <br />
-              Parker, CO 80134, United States
+              Suite 6212 #1075,
+              <br />
+              Parker, CO 80138, United States
             </div>
             <div className={styles.contactHours}>
               Monday &ndash; Friday, 8:00 AM &ndash; 5:00 PM Mountain Time
@@ -74,7 +76,7 @@ export default function Contact(): ReactNode {
         <div className={styles.mapWrap}>
           <iframe
             title="Deltisan Engineering location map"
-            src="https://www.google.com/maps?q=14922+Chicago+St,+Parker,+CO+80134&output=embed"
+            src="https://www.google.com/maps?q=6222+E+Pine+Lane,+Parker,+CO+80138&output=embed"
             width="100%"
             height="420"
             style={{ border: 0, borderRadius: 18 }}

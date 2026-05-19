@@ -27,8 +27,9 @@ function ContactBlock(): ReactNode {
       <h4 className={styles.colTitle}>Contact</h4>
       <address className={styles.address}>
         <strong>Deltisan Engineering LLC</strong>
-        14922 Chicago St,<br />
-        Parker, CO 80134
+        6222 E Pine Lane,<br />
+        Suite 6212 #1075,<br />
+        Parker, CO 80138
         <br />
         United States
       </address>

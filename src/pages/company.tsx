@@ -166,11 +166,13 @@ export default function Company(): ReactNode {
               flows, not the other way around.
             </p>
             <p className={styles.workshopAddress}>
-              <strong>Deltisan Engineering</strong>
+              <strong>Deltisan Engineering LLC</strong>
               <br />
-              14922 Chicago St,
+              6222 E Pine Lane,
               <br />
-              Parker, CO 80134, United States
+              Suite 6212 #1075,
+              <br />
+              Parker, CO 80138, United States
               <br />
               <a href="tel:+17206660405">720-666-0405</a>
             </p>

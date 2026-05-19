@@ -170,7 +170,7 @@ export default function Privacy(): ReactNode {
           <Heading as="h2">10. Contact</Heading>
           <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
             <li><strong>Deltisan Engineering LLC</strong></li>
-            <li>14922 Chicago St, Parker, CO 80134, United States</li>
+            <li>6222 E Pine Lane, Suite 6212 #1075, Parker, CO 80138, United States</li>
             <li>
               Email:{' '}
               <a href="mailto:info@deltisan.com">

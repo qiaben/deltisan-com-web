@@ -41,16 +41,16 @@ const config: Config = {
         priceRange: '$$',
         address: {
           '@type': 'PostalAddress',
-          streetAddress: '14922 Chicago St',
+          streetAddress: '6222 E Pine Lane, Suite 6212 #1075',
           addressLocality: 'Parker',
           addressRegion: 'CO',
-          postalCode: '80134',
+          postalCode: '80138',
           addressCountry: 'US',
         },
         geo: {
           '@type': 'GeoCoordinates',
-          latitude: 39.5184,
-          longitude: -104.7611,
+          latitude: 39.5286,
+          longitude: -104.7610,
         },
         openingHoursSpecification: [
           {
@@ -183,7 +183,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Deltisan Engineering LLC · 14922 Chicago St, Parker, CO 80134 · 720-666-0405 · info@deltisan.com`,
+      copyright: `Copyright © ${new Date().getFullYear()} Deltisan Engineering LLC · 6222 E Pine Lane, Suite 6212 #1075, Parker, CO 80138 · 720-666-0405 · info@deltisan.com`,
     },
     prism: {
       theme: prismThemes.github,
