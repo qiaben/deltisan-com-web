@@ -7,7 +7,7 @@ export default function Contact(): ReactNode {
   return (
     <Layout
       title="Contact — Deltisan Engineering"
-      description="Contact Deltisan Engineering in Parker, Colorado. Email, phone, address, and a 30-minute call booking.">
+      description="Contact Deltisan Engineering. US-registered, manufactured in Coimbatore, India. Email, phone, addresses, and a 30-minute call booking.">
       <section className={styles.stub}>
         <p className={styles.eyebrow}>Get in touch</p>
         <h1 className={styles.title}>Talk to an engineer.</h1>
@@ -19,7 +19,7 @@ export default function Contact(): ReactNode {
 
         <div className={styles.contactGrid}>
           <div className={styles.contactCard}>
-            <div className={styles.contactLabel}>Phone</div>
+            <div className={styles.contactLabel}>Phone (US)</div>
             <a className={styles.contactValue} href="tel:+17206660405">
               720-666-0405
             </a>
@@ -42,8 +42,8 @@ export default function Contact(): ReactNode {
               calendly.com/deltisan/30min
             </Link>
           </div>
-          <div className={styles.contactCard} style={{ gridColumn: '1 / -1' }}>
-            <div className={styles.contactLabel}>Head Office</div>
+          <div className={styles.contactCard}>
+            <div className={styles.contactLabel}>US sales &amp; contracting</div>
             <div className={styles.contactValue}>
               Deltisan Engineering LLC
               <br />
@@ -54,7 +54,22 @@ export default function Contact(): ReactNode {
               Parker, CO 80138, United States
             </div>
             <div className={styles.contactHours}>
-              Monday &ndash; Friday, 8:00 AM &ndash; 5:00 PM Mountain Time
+              Mon &ndash; Fri, 8:00 AM &ndash; 5:00 PM Mountain Time
+            </div>
+          </div>
+          <div className={styles.contactCard}>
+            <div className={styles.contactLabel}>Manufacturing facility</div>
+            <div className={styles.contactValue}>
+              Deltisan Engineering &mdash; India
+              <br />
+              1/39, Veerappanur,
+              <br />
+              Coimbatore, Tamil Nadu 641105,
+              <br />
+              India
+            </div>
+            <div className={styles.contactHours}>
+              Mon &ndash; Sat, 9:00 AM &ndash; 6:00 PM IST
             </div>
           </div>
         </div>
@@ -75,7 +90,7 @@ export default function Contact(): ReactNode {
       <section className={styles.mapSection}>
         <div className={styles.mapWrap}>
           <iframe
-            title="Deltisan Engineering location map"
+            title="Deltisan Engineering US sales office map"
             src="https://www.google.com/maps?q=6222+E+Pine+Lane,+Parker,+CO+80138&output=embed"
             width="100%"
             height="420"
@@ -88,16 +103,17 @@ export default function Contact(): ReactNode {
       </section>
 
       <section className={styles.stub} style={{ paddingTop: 60, paddingBottom: 100 }}>
-        <p className={styles.eyebrow}>Service area</p>
+        <p className={styles.eyebrow}>How we work globally</p>
         <h2 className={styles.title} style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)' }}>
-          Centennial-area precision engineering, shipped nationwide.
+          US contracts. Indian manufacturing. Global delivery.
         </h2>
         <p className={styles.subtitle}>
-          We serve customers across the south Denver metro and Front Range
-          &mdash; Centennial, Parker, Highlands Ranch, Englewood, Greenwood
-          Village, Lone Tree, Castle Rock, Denver, Aurora, and Colorado
-          Springs &mdash; with nationwide US shipping and export support on
-          request.
+          Deltisan Engineering LLC is a Colorado-registered company that
+          contracts, invoices, and supports customers under US law. Parts
+          are manufactured at our Coimbatore facility &mdash; to your
+          drawings or to ours when you need design support &mdash; and ship
+          worldwide to the US, EU, UK, Canada, Australia, and Asia on
+          documented commercial terms.
         </p>
       </section>
     </Layout>

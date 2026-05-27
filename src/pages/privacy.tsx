@@ -13,7 +13,7 @@ export default function Privacy(): ReactNode {
           <Heading as="h1">Privacy Policy</Heading>
           <p className={styles.legalMeta}>
             <strong>Effective Date:</strong> May 8, 2026 &nbsp;|&nbsp;{' '}
-            <strong>Last Updated:</strong> May 15, 2026
+            <strong>Last Updated:</strong> May 19, 2026
           </p>
 
           <p>
@@ -89,7 +89,20 @@ export default function Privacy(): ReactNode {
             federal and Colorado state law.
           </p>
 
-          <Heading as="h2">6. Security</Heading>
+          <Heading as="h2">6. International Data Transfers</Heading>
+          <p>
+            Deltisan Engineering LLC is a Colorado, US-registered company.
+            Manufacturing operations take place at our facility in
+            Coimbatore, Tamil Nadu, India. Drawings, specifications, order
+            details, and related correspondence you share with us may
+            therefore be transferred to and processed in India by our
+            production team for the purposes of evaluating, quoting, and
+            producing your work. We use contractual safeguards consistent
+            with applicable law to protect personal data wherever it is
+            processed.
+          </p>
+
+          <Heading as="h2">7. Security</Heading>
           <p>
             We use reasonable physical, administrative, and technical
             safeguards to protect personal and project information. No
@@ -97,7 +110,7 @@ export default function Privacy(): ReactNode {
             cannot guarantee absolute security.
           </p>
 
-          <Heading as="h2">7. Your Rights</Heading>
+          <Heading as="h2">8. Your Rights</Heading>
           <p>
             You may request access to, correction of, or deletion of the
             personal information we hold about you, subject to applicable
@@ -108,7 +121,7 @@ export default function Privacy(): ReactNode {
             .
           </p>
 
-          <Heading as="h2">8. Colorado Privacy Act (CPA) Notice</Heading>
+          <Heading as="h2">9. Colorado Privacy Act (CPA) Notice</Heading>
           <p>
             If you are a Colorado resident, the Colorado Privacy Act gives you
             specific rights with respect to the personal data we hold about
@@ -160,26 +173,28 @@ export default function Privacy(): ReactNode {
             authority.
           </p>
 
-          <Heading as="h2">9. Changes to This Policy</Heading>
+          <Heading as="h2">10. Changes to This Policy</Heading>
           <p>
             We may update this policy from time to time. The
             &ldquo;Last Updated&rdquo; date at the top reflects the most
             recent revision.
           </p>
 
-          <Heading as="h2">10. Contact</Heading>
+          <Heading as="h2">11. Contact</Heading>
           <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
-            <li><strong>Deltisan Engineering LLC</strong></li>
+            <li><strong>Deltisan Engineering LLC</strong> &mdash; US sales &amp; contracting</li>
             <li>6222 E Pine Lane, Suite 6212 #1075, Parker, CO 80138, United States</li>
             <li>
               Email:{' '}
               <a href="mailto:info@deltisan.com">
                 info@deltisan.com
-              </a>
+              </a>{' '}
+              &middot; Phone: <a href="tel:+17206660405">720-666-0405</a>
             </li>
-            <li>
-              Phone: <a href="tel:+17206660405">720-666-0405</a>
+            <li style={{ marginTop: 12 }}>
+              <strong>Coimbatore manufacturing facility</strong>
             </li>
+            <li>1/39, Veerappanur, Coimbatore, Tamil Nadu 641105, India</li>
           </ul>
         </article>
       </main>

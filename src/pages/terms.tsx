@@ -13,7 +13,7 @@ export default function Terms(): ReactNode {
           <Heading as="h1">Terms of Service</Heading>
           <p className={styles.legalMeta}>
             <strong>Effective Date:</strong> May 8, 2026 &nbsp;|&nbsp;{' '}
-            <strong>Last Updated:</strong> May 8, 2026
+            <strong>Last Updated:</strong> May 19, 2026
           </p>
 
           <p>
@@ -145,17 +145,19 @@ export default function Terms(): ReactNode {
 
           <Heading as="h2">14. Contact</Heading>
           <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
-            <li><strong>Deltisan Engineering LLC</strong></li>
+            <li><strong>Deltisan Engineering LLC</strong> &mdash; US sales &amp; contracting</li>
             <li>6222 E Pine Lane, Suite 6212 #1075, Parker, CO 80138, United States</li>
             <li>
               Email:{' '}
               <a href="mailto:info@deltisan.com">
                 info@deltisan.com
-              </a>
+              </a>{' '}
+              &middot; Phone: <a href="tel:+17206660405">720-666-0405</a>
             </li>
-            <li>
-              Phone: <a href="tel:+17206660405">720-666-0405</a>
+            <li style={{ marginTop: 12 }}>
+              <strong>Coimbatore manufacturing facility</strong>
             </li>
+            <li>1/39, Veerappanur, Coimbatore, Tamil Nadu 641105, India</li>
           </ul>
         </article>
       </main>

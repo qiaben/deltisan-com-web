@@ -161,19 +161,23 @@ export default function Company(): ReactNode {
               Where the parts get made.
             </h2>
             <p className={styles.workshopDesc}>
-              Design office, machine shop, fabrication bay, finishing line,
-              and inspection — laid out so the part moves the way the work
-              flows, not the other way around.
+              Machine shop, fabrication bay, finishing line, and inspection
+              — laid out so the part moves the way the work flows, not the
+              other way around. Built and run in Coimbatore, India.
             </p>
             <p className={styles.workshopAddress}>
-              <strong>Deltisan Engineering LLC</strong>
+              <strong>Deltisan Engineering &mdash; India</strong>
               <br />
-              6222 E Pine Lane,
+              1/39, Veerappanur,
               <br />
-              Suite 6212 #1075,
+              Coimbatore, Tamil Nadu 641105,
               <br />
-              Parker, CO 80138, United States
+              India
+            </p>
+            <p className={styles.workshopAddress} style={{ marginTop: 12, fontSize: '0.9rem' }}>
+              <strong>US sales &amp; contracting</strong>
               <br />
+              Deltisan Engineering LLC, Parker, CO &middot;{' '}
               <a href="tel:+17206660405">720-666-0405</a>
             </p>
             <Link className={styles.cta} to="/schedule">

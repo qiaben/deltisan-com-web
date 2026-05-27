@@ -24,14 +24,12 @@ function CtaBar(): ReactNode {
 function ContactBlock(): ReactNode {
   return (
     <div className={styles.contactBlock}>
-      <h4 className={styles.colTitle}>Contact</h4>
+      <h4 className={styles.colTitle}>US sales</h4>
       <address className={styles.address}>
         <strong>Deltisan Engineering LLC</strong>
         6222 E Pine Lane,<br />
         Suite 6212 #1075,<br />
-        Parker, CO 80138
-        <br />
-        United States
+        Parker, CO 80138, USA
       </address>
       <a className={styles.contactLink} href="tel:+17206660405">
         <svg className={styles.contactIcon} viewBox="0 0 24 24" aria-hidden="true">
@@ -45,11 +43,19 @@ function ContactBlock(): ReactNode {
         </svg>
         info@deltisan.com
       </a>
+
+      <h4 className={styles.colTitle} style={{marginTop: 16}}>Manufacturing</h4>
+      <address className={styles.address}>
+        <strong>Coimbatore facility</strong>
+        1/39, Veerappanur,<br />
+        Coimbatore, Tamil Nadu 641105,<br />
+        India
+      </address>
       <p className={styles.hours}>
         <svg className={styles.contactIcon} viewBox="0 0 24 24" aria-hidden="true">
           <path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm.5-13H11v6l5.2 3.1.8-1.3-4.5-2.7z" />
         </svg>
-        Mon&ndash;Fri, 8:00 AM &ndash; 5:00 PM MT
+        Mon &ndash; Sat, 9:00 AM &ndash; 6:00 PM IST
       </p>
     </div>
   );
@@ -74,10 +80,10 @@ function LinkColumn({title, items}: {title: string; items: {label: string; to?: 
 
 function Badges(): ReactNode {
   const badges = [
-    {label: 'Made in USA', sub: 'Parker, CO'},
+    {label: 'Global export', sub: 'US, EU, and Asia'},
     {label: 'Woman-Owned', sub: 'Small business'},
     {label: 'ISO 9001', sub: 'Pursuing'},
-    {label: 'US Small Business', sub: 'Registered'},
+    {label: 'US Small Business', sub: 'Colorado-registered'},
   ];
   return (
     <div className={styles.badgeRow}>
@@ -107,8 +113,9 @@ export default function Footer(): ReactNode {
               <span className={styles.brandName}>Deltisan</span>
             </Link>
             <p className={styles.brandTagline}>
-              Colorado precision engineering. Design, machining, fabrication,
-              and finishing &mdash; built to spec, inspected to spec.
+              US-registered precision engineering, manufactured at our
+              Coimbatore facility. Machining, fabrication, and finishing
+              &mdash; built to spec, inspected to spec, exported worldwide.
             </p>
             <Badges />
           </div>
@@ -139,11 +146,10 @@ export default function Footer(): ReactNode {
         </div>
 
         <p className={styles.serviceArea}>
-          <strong>Serving Centennial &amp; the south Denver metro:</strong>{' '}
-          Centennial · Parker · Highlands Ranch · Englewood · Greenwood
-          Village · Lone Tree · Castle Rock · Denver · Aurora · Colorado
-          Springs &mdash; with nationwide US shipping and export support
-          on request.
+          <strong>Built in Coimbatore. Shipped worldwide.</strong>{' '}
+          Manufactured at our India facility &mdash; exported to the US,
+          Canada, UK, EU, Australia, and Asia on documented commercial
+          terms.
         </p>
 
         <div className={styles.bottomBar}>

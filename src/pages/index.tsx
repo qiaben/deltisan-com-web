@@ -41,7 +41,7 @@ function HeroVisual(): ReactNode {
           </div>
           <div className={styles.specRow}>
             <span className={styles.specKey}>Origin</span>
-            <span className={styles.specVal}>Parker, Colorado</span>
+            <span className={styles.specVal}>Coimbatore, India</span>
           </div>
         </aside>
       </div>
@@ -170,14 +170,13 @@ function ProductTiles(): ReactNode {
 function TrustBadges(): ReactNode {
   const badges = [
     {
-      title: 'Made in USA',
-      subtitle: 'Parker, Colorado',
+      title: 'Global export',
+      subtitle: 'US, EU, and Asia',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-          <path d="M3 6h18" /><path d="M3 10h18" /><path d="M3 14h18" /><path d="M3 18h18" />
-          <rect x="3" y="6" width="9" height="6" fill="currentColor" stroke="none" opacity="0.18" />
-          <circle cx="5.5" cy="8" r="0.6" fill="currentColor" stroke="none" /><circle cx="8" cy="8" r="0.6" fill="currentColor" stroke="none" /><circle cx="10.5" cy="8" r="0.6" fill="currentColor" stroke="none" />
-          <circle cx="6.5" cy="10" r="0.6" fill="currentColor" stroke="none" /><circle cx="9" cy="10" r="0.6" fill="currentColor" stroke="none" />
+          <circle cx="12" cy="12" r="9" />
+          <path d="M3 12h18" />
+          <path d="M12 3a13 13 0 0 1 0 18M12 3a13 13 0 0 0 0 18" />
         </svg>
       ),
     },
@@ -288,7 +287,7 @@ function HeroStrip(): ReactNode {
       aria-label="Deltisan workshop">
       <div className={styles.heroStripCaption}>
         <h3 className={styles.heroStripTitle}>
-          Built for OEMs and industrial customers across the United States.
+          Engineered for OEMs and industrial buyers worldwide.
         </h3>
         <span className={styles.heroStripMeta}>The workshop</span>
       </div>
@@ -379,7 +378,7 @@ function Capabilities(): ReactNode {
     {
       image: '/img/stock/workshop-1.jpg',
       title: 'Logistics',
-      desc: 'Nationwide US dispatch, with export support on request.',
+      desc: 'Manufactured at our Coimbatore facility, exported worldwide on documented commercial terms.',
     },
   ];
 
