@@ -192,7 +192,7 @@ export default function Privacy(): ReactNode {
               &middot; Phone: <a href="tel:+17206660405">+1 720-666-0405</a>
             </li>
             <li style={{ marginTop: 12 }}>
-              <strong>Coimbatore manufacturing facility</strong>
+              <strong>India head office</strong>
             </li>
             <li>1/39, Veerappanur, Coimbatore, Tamil Nadu 641105, India</li>
           </ul>

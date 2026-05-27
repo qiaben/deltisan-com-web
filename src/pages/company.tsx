@@ -156,17 +156,19 @@ export default function Company(): ReactNode {
             aria-hidden="true"
           />
           <div className={styles.workshopCard}>
-            <p className={styles.workshopEyebrow}>The workshop</p>
+            <p className={styles.workshopEyebrow}>India head office</p>
             <h2 className={styles.workshopTitle}>
-              Where the parts get made.
+              Where the work is run.
             </h2>
             <p className={styles.workshopDesc}>
-              Machine shop, fabrication bay, finishing line, and inspection
-              — laid out so the part moves the way the work flows, not the
-              other way around. Built and run in Coimbatore, India.
+              Our India head office in Coimbatore is where engineering,
+              quoting, scheduling, and quality oversight come together.
+              Production is run through it &mdash; to the same documented
+              procedures whether we&apos;re machining, fabricating,
+              finishing, or inspecting.
             </p>
             <p className={styles.workshopAddress}>
-              <strong>Deltisan Engineering &mdash; India</strong>
+              <strong>Deltisan Engineering &mdash; India head office</strong>
               <br />
               1/39, Veerappanur,
               <br />

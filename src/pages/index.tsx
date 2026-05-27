@@ -360,7 +360,7 @@ function Capabilities(): ReactNode {
     {
       image: '/img/stock/workshop-1.jpg',
       title: 'Logistics',
-      desc: 'Manufactured at our Coimbatore facility, exported worldwide on documented commercial terms.',
+      desc: 'Production in India, coordinated from our Coimbatore head office. Exported worldwide on documented commercial terms.',
     },
   ];
 

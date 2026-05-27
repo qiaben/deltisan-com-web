@@ -44,9 +44,9 @@ function ContactBlock(): ReactNode {
         info@deltisan.com
       </a>
 
-      <h4 className={styles.colTitle} style={{marginTop: 16}}>Manufacturing</h4>
+      <h4 className={styles.colTitle} style={{marginTop: 16}}>India head office</h4>
       <address className={styles.address}>
-        <strong>Coimbatore facility</strong>
+        <strong>Deltisan Engineering &mdash; India</strong>
         1/39, Veerappanur,<br />
         Coimbatore, Tamil Nadu 641105,<br />
         India
@@ -111,9 +111,10 @@ export default function Footer(): ReactNode {
               <span className={styles.brandName}>Deltisan</span>
             </Link>
             <p className={styles.brandTagline}>
-              US-registered precision engineering, manufactured at our
-              Coimbatore facility. Machining, fabrication, and finishing
-              &mdash; built to spec, inspected to spec, exported worldwide.
+              US-registered precision engineering, with India operations
+              run from our Coimbatore head office. Machining, fabrication,
+              and finishing &mdash; built to spec, inspected to spec,
+              exported worldwide.
             </p>
             <Badges />
           </div>
@@ -144,10 +145,10 @@ export default function Footer(): ReactNode {
         </div>
 
         <p className={styles.serviceArea}>
-          <strong>Built in Coimbatore. Shipped worldwide.</strong>{' '}
-          Manufactured at our India facility &mdash; exported to the US,
-          Canada, UK, EU, Australia, and Asia on documented commercial
-          terms.
+          <strong>Built in India. Shipped worldwide.</strong>{' '}
+          Production coordinated from our Coimbatore head office &mdash;
+          exported to the US, Canada, UK, EU, Australia, and Asia on
+          documented commercial terms.
         </p>
 
         <div className={styles.bottomBar}>

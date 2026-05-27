@@ -46,7 +46,7 @@ const steps = [
   },
   {
     title: 'Pack & dispatch',
-    desc: 'Sub-assembly, fitment checks, and export-ready packaging. Shipped worldwide from our Coimbatore facility on documented commercial terms.',
+    desc: 'Sub-assembly, fitment checks, and export-ready packaging. Shipped worldwide, coordinated from our Coimbatore head office, on documented commercial terms.',
     image: '/img/stock/workshop-1.jpg',
   },
 ];

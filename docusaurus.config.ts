@@ -61,7 +61,7 @@ const config: Config = {
           },
           {
             '@type': 'Place',
-            name: 'Deltisan Engineering — Coimbatore manufacturing facility',
+            name: 'Deltisan Engineering — Coimbatore head office (India)',
             address: {
               '@type': 'PostalAddress',
               streetAddress: '1/39, Veerappanur',
@@ -82,7 +82,7 @@ const config: Config = {
         ],
         sameAs: ['https://deltisan.com'],
         description:
-          'Deltisan Engineering LLC is a Colorado-registered precision-engineering company offering CNC machining, sheet-metal fabrication, welding, and surface finishing. Parts are manufactured at our Coimbatore, India facility and exported worldwide to aerospace, oil-and-gas, and industrial OEM customers.',
+          'Deltisan Engineering LLC is a Colorado-registered precision-engineering company offering CNC machining, sheet-metal fabrication, welding, and surface finishing. Production happens in India, coordinated from our Coimbatore head office, and is exported worldwide to aerospace, oil-and-gas, and industrial OEM customers.',
       }),
     },
   ],

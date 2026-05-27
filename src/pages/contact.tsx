@@ -58,7 +58,7 @@ export default function Contact(): ReactNode {
             </div>
           </div>
           <div className={styles.contactCard}>
-            <div className={styles.contactLabel}>Manufacturing facility</div>
+            <div className={styles.contactLabel}>India head office</div>
             <div className={styles.contactValue}>
               Deltisan Engineering &mdash; India
               <br />
@@ -109,11 +109,11 @@ export default function Contact(): ReactNode {
         </h2>
         <p className={styles.subtitle}>
           Deltisan Engineering LLC is a Colorado-registered company that
-          contracts, invoices, and supports customers under US law. Parts
-          are manufactured at our Coimbatore facility &mdash; to your
-          drawings or to ours when you need design support &mdash; and ship
-          worldwide to the US, EU, UK, Canada, Australia, and Asia on
-          documented commercial terms.
+          contracts, invoices, and supports customers under US law.
+          Production happens in India, coordinated from our Coimbatore head
+          office &mdash; to your drawings or to ours when you need design
+          support &mdash; and ships worldwide to the US, EU, UK, Canada,
+          Australia, and Asia on documented commercial terms.
         </p>
       </section>
     </Layout>
