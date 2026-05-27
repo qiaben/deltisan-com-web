@@ -81,8 +81,7 @@ function LinkColumn({title, items}: {title: string; items: {label: string; to?: 
 function Badges(): ReactNode {
   const badges = [
     {label: 'Global export', sub: 'US, EU, and Asia'},
-    {label: 'ISO 9001', sub: 'Pursuing'},
-    {label: 'US Small Business', sub: 'Colorado-registered'},
+    {label: 'ISO 9001', sub: 'Pursuing certification'},
   ];
   return (
     <div className={styles.badgeRow}>
