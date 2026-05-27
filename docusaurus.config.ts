@@ -143,7 +143,7 @@ const config: Config = {
         { to: '/company', label: 'Company', position: 'left' },
         {
           href: 'tel:+17206660405',
-          label: '720-666-0405',
+          label: '+1 720-666-0405',
           position: 'right',
           className: 'navbar-phone',
         },
@@ -190,7 +190,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Deltisan Engineering LLC · 6222 E Pine Lane, Suite 6212 #1075, Parker, CO 80138 · 720-666-0405 · info@deltisan.com`,
+      copyright: `Copyright © ${new Date().getFullYear()} Deltisan Engineering LLC · 6222 E Pine Lane, Suite 6212 #1075, Parker, CO 80138 · +1 720-666-0405 · info@deltisan.com`,
     },
     prism: {
       theme: prismThemes.github,

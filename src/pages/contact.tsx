@@ -21,7 +21,7 @@ export default function Contact(): ReactNode {
           <div className={styles.contactCard}>
             <div className={styles.contactLabel}>Phone (US)</div>
             <a className={styles.contactValue} href="tel:+17206660405">
-              720-666-0405
+              +1 720-666-0405
             </a>
           </div>
           <div className={styles.contactCard}>

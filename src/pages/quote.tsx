@@ -147,7 +147,7 @@ export default function Quote(): ReactNode {
 
           <p className={styles.formHelp} style={{ marginTop: 12 }}>
             We respond within one business day. For anything urgent,
-            call <a href="tel:+17206660405">720-666-0405</a> or email{' '}
+            call <a href="tel:+17206660405">+1 720-666-0405</a> or email{' '}
             <a href="mailto:info@deltisan.com">info@deltisan.com</a>.
           </p>
         </form>

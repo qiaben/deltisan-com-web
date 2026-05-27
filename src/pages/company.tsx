@@ -178,7 +178,7 @@ export default function Company(): ReactNode {
               <strong>US sales &amp; contracting</strong>
               <br />
               Deltisan Engineering LLC, Parker, CO &middot;{' '}
-              <a href="tel:+17206660405">720-666-0405</a>
+              <a href="tel:+17206660405">+1 720-666-0405</a>
             </p>
             <Link className={styles.cta} to="/schedule">
               Book a call

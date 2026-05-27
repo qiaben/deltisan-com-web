@@ -35,7 +35,7 @@ function ContactBlock(): ReactNode {
         <svg className={styles.contactIcon} viewBox="0 0 24 24" aria-hidden="true">
           <path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.05-.24c1.12.37 2.33.57 3.54.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.21.2 2.42.57 3.54a1 1 0 0 1-.24 1.05l-2.21 2.2z" />
         </svg>
-        720-666-0405
+        +1 720-666-0405
       </a>
       <a className={styles.contactLink} href="mailto:info@deltisan.com">
         <svg className={styles.contactIcon} viewBox="0 0 24 24" aria-hidden="true">
@@ -81,7 +81,6 @@ function LinkColumn({title, items}: {title: string; items: {label: string; to?: 
 function Badges(): ReactNode {
   const badges = [
     {label: 'Global export', sub: 'US, EU, and Asia'},
-    {label: 'Woman-Owned', sub: 'Small business'},
     {label: 'ISO 9001', sub: 'Pursuing'},
     {label: 'US Small Business', sub: 'Colorado-registered'},
   ];

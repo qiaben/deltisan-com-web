@@ -686,18 +686,15 @@
 
 .trustGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   background: var(--d-bg-soft);
   border-radius: 18px;
   padding: 22px clamp(16px, 3vw, 40px);
 }
 
-@media (max-width: 800px) {
-  .trustGrid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
-}
-@media (max-width: 460px) {
-  .trustGrid { grid-template-columns: 1fr; }
+@media (max-width: 720px) {
+  .trustGrid { grid-template-columns: 1fr; gap: 14px; }
 }
 
 .trustBadge {

@@ -181,15 +181,6 @@ function TrustBadges(): ReactNode {
       ),
     },
     {
-      title: 'Woman-Owned',
-      subtitle: 'Small business',
-      icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-          <circle cx="12" cy="9" r="5" /><path d="M12 14v8" /><path d="M9 19h6" />
-        </svg>
-      ),
-    },
-    {
       title: 'ISO 9001',
       subtitle: 'Pursuing certification',
       icon: (
