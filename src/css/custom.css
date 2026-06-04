@@ -199,8 +199,28 @@ body {
 @media (max-width: 996px) {
   .navbar-phone,
   .navbar-email {
-    display: none;
+    display: none !important;
   }
+}
+
+/* Blog post next/prev nav — override global pill radius so links don't become ovals */
+.pagination-nav__link {
+  border-radius: 14px !important;
+}
+
+.pagination-nav__sublabel {
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.6;
+  margin-bottom: 4px;
+}
+
+.pagination-nav__label {
+  font-size: 0.93rem;
+  font-weight: 600;
+  line-height: 1.35;
 }
 
 .button {
