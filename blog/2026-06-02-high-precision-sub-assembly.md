@@ -3,7 +3,7 @@ slug: high-precision-sub-assembly
 title: What "complete sub-assembly" should actually mean when you order it
 authors: [suhesma]
 tags: [assembly, quality, manufacturing]
-date: 2026-05-21
+date: 2026-06-02
 description: A lot of suppliers say they deliver complete sub-assemblies. Here's what that should mean in practice — and what to ask for when it doesn't.
 image: /img/stock/workshop-1.jpg
 ---

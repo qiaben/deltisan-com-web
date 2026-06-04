@@ -3,7 +3,7 @@ slug: precision-pipe-fabrication
 title: Pipe fabrication — the paperwork is part of the product
 authors: [suhesma]
 tags: [fabrication, welding, piping]
-date: 2026-05-28
+date: 2026-06-03
 description: Industrial pipe fabrication is not just weld quality. The documentation — material traceability, weld procedures, NDT records — is what keeps the installation inspectable and insurable.
 image: /img/stock/welding-1.jpg
 ---

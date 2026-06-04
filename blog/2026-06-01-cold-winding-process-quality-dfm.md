@@ -3,7 +3,7 @@ slug: cold-winding-process-quality-dfm
 title: Cold winding — the DFM decisions that cost you most often
 authors: [suhesma]
 tags: [springs, dfm, manufacturing, quality]
-date: 2026-05-14
+date: 2026-06-01
 description: Most cold-wound spring and wire-form rejections trace back to a small number of avoidable design and process decisions. Here's what to watch.
 image: /img/stock/cnc-1.jpg
 ---
