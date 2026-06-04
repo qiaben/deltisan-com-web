@@ -105,7 +105,8 @@ const config: Config = {
           blogDescription: 'Notes from the workshop — DFM, fabrication, finishing, and quality.',
           blogSidebarTitle: 'Recent posts',
           blogSidebarCount: 'ALL',
-          postsPerPage: 5,
+          postsPerPage: 3,
+          sortPosts: 'descending',
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,

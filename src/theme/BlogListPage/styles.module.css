@@ -177,20 +177,46 @@
 
 .paginator :global(.pagination-nav) {
   width: 100%;
-  max-width: 720px;
+  max-width: 560px;
+  display: flex;
   gap: 16px;
+  justify-content: center;
 }
 
 .paginator :global(.pagination-nav__link) {
-  border-radius: 14px;
-  border-color: var(--d-border);
-  background: var(--d-bg);
-  transition: border-color 0.15s ease, transform 0.15s ease;
+  flex: 1;
+  border-radius: 12px;
+  border: 1.5px solid var(--d-border, #d2d2d7);
+  background: var(--d-bg, #fff);
+  padding: 14px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--d-accent, #1d4ed8);
+  text-align: center;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .paginator :global(.pagination-nav__link:hover) {
-  border-color: var(--d-accent);
-  transform: translateY(-1px);
+  background: var(--d-accent, #1d4ed8);
+  border-color: var(--d-accent, #1d4ed8);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(29, 78, 216, 0.25);
+  text-decoration: none;
+}
+
+.paginator :global(.pagination-nav__sublabel) {
+  display: none;
+}
+
+.paginator :global(.pagination-nav__label) {
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 [data-theme='dark'] .card {
