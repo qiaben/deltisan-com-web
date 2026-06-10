@@ -3,7 +3,7 @@ slug: trusted-engineering-services-modern-industries
 title: Trusted engineering services for modern industries today
 authors: [suhesma]
 tags: [hvac, fire-fighting, healthcare, mep, engineering]
-date: 2026-06-10
+date: 2026-06-05
 description: From HVAC and fire-fighting systems to healthcare infrastructure and MEP services, the right engineering partner is what keeps modern industrial operations running safely and efficiently.
 image: /img/stock/blueprint-1.jpg
 ---
