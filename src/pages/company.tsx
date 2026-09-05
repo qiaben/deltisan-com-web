@@ -152,23 +152,39 @@ export default function Company(): ReactNode {
         <div className={styles.workshopSplit}>
           <div
             className={styles.workshopImage}
-            style={{ backgroundImage: 'url(/img/stock/workshop-1.jpg)' }}
+            style={{ backgroundImage: 'url(/img/facility/facility-exterior.jpg)' }}
             aria-hidden="true"
           />
           <div className={styles.workshopCard}>
-            <p className={styles.workshopEyebrow}>India head office</p>
+            <p className={styles.workshopEyebrow}>Manufacturing facility</p>
             <h2 className={styles.workshopTitle}>
               Where the work is run.
             </h2>
             <p className={styles.workshopDesc}>
-              Our India head office in Coimbatore is where engineering,
-              quoting, scheduling, and quality oversight come together.
-              Production is run through it &mdash; to the same documented
-              procedures whether we&apos;re machining, fabricating,
-              finishing, or inspecting.
+              Our newly constructed manufacturing facility at Kinathukadavu,
+              Coimbatore, built to support expanding CNC turning capacity
+              &mdash; with dedicated bays for machine installation, material
+              handling, and inspection.
+            </p>
+            <p className={styles.workshopDesc}>
+              Engineering, quoting, scheduling, and quality oversight come
+              together at our Coimbatore head office, and production is run
+              through it &mdash; to the same documented procedures whether
+              we&apos;re machining, fabricating, finishing, or inspecting.
             </p>
             <p className={styles.workshopAddress}>
-              <strong>Deltisan Engineering &mdash; India head office</strong>
+              <strong>Deltisan Engineering &mdash; manufacturing facility</strong>
+              <br />
+              SF. No 52, Sirphy Industrial Estate,
+              <br />
+              Beyond Saranalayam, Singaram Palayam (Post),
+              <br />
+              Kinathukadavu, Coimbatore, Tamil Nadu 642109,
+              <br />
+              India
+            </p>
+            <p className={styles.workshopAddress}>
+              <strong>Deltisan Engineering &mdash; Coimbatore head office</strong>
               <br />
               1/39, Veerappanur,
               <br />

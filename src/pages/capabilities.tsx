@@ -117,6 +117,23 @@ const materials = [
   { name: 'Engineering plastics', meta: 'Delrin, nylon, UHMW, HDPE on request' },
 ];
 
+const machineSpecs = [
+  { name: 'Chuck', value: '210 mm (8")' },
+  { name: 'Max turning diameter', value: '320 mm' },
+  { name: 'Max turning length', value: '310 mm' },
+  { name: 'Spindle bore', value: '61 mm' },
+  { name: 'Spindle nose', value: 'A2-6' },
+  { name: 'Spindle speed', value: 'Up to 4,000 rpm' },
+  { name: 'Turret', value: '8 stations' },
+  { name: 'Tool shank', value: '25 × 25 mm' },
+  { name: 'Max boring bar', value: '40 mm' },
+  { name: 'X-axis travel', value: '185 mm' },
+  { name: 'Z-axis travel', value: '370 mm' },
+  { name: 'Rapid traverse (X/Z)', value: '30 m/min' },
+  { name: 'Tailstock', value: 'MT-4, 75 mm quill' },
+  { name: 'CNC control', value: 'Fanuc / Siemens' },
+];
+
 export default function Capabilities(): ReactNode {
   return (
     <Layout
@@ -125,7 +142,7 @@ export default function Capabilities(): ReactNode {
       <section className={styles.stub} style={{ paddingBottom: 40 }}>
         <div
           className={styles.heroBanner}
-          style={{ backgroundImage: 'url(/img/stock/cnc-1.jpg)' }}
+          style={{ backgroundImage: 'url(/img/facility/cnc-turning-lx20t-wide.jpg)' }}
           aria-hidden="true"
         />
         <p className={styles.eyebrow}>Capabilities</p>
@@ -167,6 +184,45 @@ export default function Capabilities(): ReactNode {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className={styles.equipment}>
+        <div className={styles.equipmentHead}>
+          <p className={styles.eyebrow}>Equipment</p>
+          <h2 className={styles.title} style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)' }}>
+            The machines the parts are actually cut on.
+          </h2>
+          <p className={styles.subtitle}>
+            Turning capacity at our Kinathukadavu unit, listed in full so you
+            can check your part against it before you send a drawing.
+          </p>
+        </div>
+        <div className={styles.equipmentSplit}>
+          <div
+            className={styles.equipmentImage}
+            style={{ backgroundImage: 'url(/img/facility/cnc-turning-lx20t.jpg)' }}
+            role="img"
+            aria-label="LMW LX20T L3 horizontal CNC turning centre on the shop floor"
+          />
+          <div className={styles.equipmentCard}>
+            <p className={styles.capEyebrow}>CNC turning centre</p>
+            <h3 className={styles.equipmentName}>LMW LX20T L3</h3>
+            <p className={styles.equipmentDesc}>
+              A horizontal CNC turning centre built for high-precision,
+              high-repeatability production turning &mdash; an 8-station
+              turret, a 61 mm spindle bore, and 4,000 rpm on the spindle.
+              Available with Fanuc or Siemens control.
+            </p>
+            <div className={styles.specTable}>
+              {machineSpecs.map((sp) => (
+                <div key={sp.name} className={styles.specLine}>
+                  <p className={styles.specName}>{sp.name}</p>
+                  <p className={styles.specFigure}>{sp.value}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
