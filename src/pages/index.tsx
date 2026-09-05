@@ -279,11 +279,11 @@ function HeroStrip(): ReactNode {
 
 function Gallery(): ReactNode {
   const items = [
-    { src: '/img/facility/cnc-turning-lx20t.jpg', caption: 'LMW LX20T L3 turning centre', cls: 'tall' },
+    { src: '/img/stock/cnc-2.jpg', caption: 'CNC machining', cls: 'tall' },
     { src: '/img/stock/welding-2.jpg', caption: 'TIG welding' },
     { src: '/img/stock/sheet-metal-2.jpg', caption: 'Sheet metal' },
     { src: '/img/facility/facility-exterior.jpg', caption: 'Kinathukadavu facility' },
-    { src: '/img/stock/welding-3.jpg', caption: 'Fabrication', cls: 'wide' },
+    { src: '/img/facility/cnc-turning-lx20t.jpg', caption: 'LMW LX20T L3 turning centre', cls: 'wide' },
     { src: '/img/stock/sheet-metal-3.jpg', caption: 'Press & punch' },
   ];
   return (
